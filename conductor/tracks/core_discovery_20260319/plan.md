@@ -10,7 +10,7 @@
 
 - [x] Task: Implement a dynamic scanner to identify skills within the suite's directory. fd68537
 - [x] Task: Develop the `gemini-suite list` command to display available skills and their summaries. f003f1c
-- [ ] Task: Ensure the discovery system handles metadata (names, descriptions, categories) correctly.
+- [x] Task: Ensure the discovery system handles metadata (names, descriptions, categories) correctly. d33f4d0
 
 ## Phase 3: Final Integration and Validation
 
