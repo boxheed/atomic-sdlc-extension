@@ -4,8 +4,8 @@
 
 - [x] Task: Update the command namespace in `config/extension.yaml` from `gemini-suite` to `/atomic`. (240c638)
 - [x] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product.md`. (03b0cc2)
-- [ ] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `tech-stack.md`.
-- [ ] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product-guidelines.md`.
+- [x] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `tech-stack.md`. (03b0cc2)
+- [x] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product-guidelines.md`. (6163b76)
 - [ ] Task: Conductor - User Manual Verification 'Core Update' (Protocol in workflow.md)
 
 ## Phase 2: Scripts and Tests Refactoring
