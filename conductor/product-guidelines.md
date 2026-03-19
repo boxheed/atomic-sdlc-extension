@@ -4,7 +4,7 @@
 Documentation and AI-generated content must be **highly technical and precise**. Use structured language and precise terminology to describe tasks and outcomes. Maintain grammatical accuracy and consistent casing for all technical terms (e.g., "SDLC," "Gemini CLI," "API").
 
 ## Branding and Naming
-- **Command Names:** All commands within the suite must use kebab-case (e.g., `gemini-suite <command>`).
+- **Command Names:** All commands within the suite must use kebab-case (e.g., `/atomic <command>`).
 - **Consistency:** Ensure consistent naming across all extensions and atomic skills.
 - **Standardized Terms:** Adhere strictly to the established terminology of the project and the Gemini CLI ecosystem.
 
