@@ -14,6 +14,6 @@
 
 ## Phase 3: Final Integration and Validation
 
-- [ ] Task: Verify that new skills are automatically discovered and listed by the suite.
+- [x] Task: Verify that new skills are automatically discovered and listed by the suite. 977d606
 - [ ] Task: Perform a self-review of the implementation against the product guidelines.
 - [ ] Task: Conductor - User Manual Verification 'Final Integration' (Protocol in workflow.md)
