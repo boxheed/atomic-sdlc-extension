@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: create a gemini-extension.json**
+- [x] **Track: create a gemini-extension.json**
 *Link: [./tracks/manifest_20260319/](./tracks/manifest_20260319/)*
