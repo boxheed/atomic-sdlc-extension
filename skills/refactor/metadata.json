@@ -1,0 +1,8 @@
+{
+  "name": "refactor",
+  "display_name": "<Skill Name>",
+  "description": "<A concise summary of the skill's purpose.>",
+  "category": "coding",
+  "version": "1.0.0",
+  "status": "active"
+}

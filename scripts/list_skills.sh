@@ -1,5 +1,5 @@
 #!/bin/bash
-# List all available skills and their summaries
+# List all available skills and their summaries, including categories
 
 SKILLS_DIR=$1
 
@@ -7,5 +7,11 @@ SKILLS_DIR=$1
 find "$SKILLS_DIR" -maxdepth 2 -name "metadata.json" | while read -r METADATA_FILE; do
   NAME=$(jq -r '.name' "$METADATA_FILE")
   DESCRIPTION=$(jq -r '.description' "$METADATA_FILE")
-  echo "$NAME - $DESCRIPTION"
+  CATEGORY=$(jq -r '.category' "$METADATA_FILE")
+  
+  if [ "$CATEGORY" != "null" ]; then
+    echo "[$CATEGORY] $NAME - $DESCRIPTION"
+  else
+    echo "$NAME - $DESCRIPTION"
+  fi
 done
