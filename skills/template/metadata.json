@@ -1,0 +1,8 @@
+{
+  "name": "template",
+  "display_name": "<Skill Name>",
+  "description": "<A concise summary of the skill's purpose.>",
+  "category": "<e.g., coding, testing, analysis>",
+  "version": "1.0.0",
+  "status": "active"
+}
