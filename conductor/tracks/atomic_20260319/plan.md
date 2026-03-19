@@ -3,7 +3,7 @@
 ## Phase 1: Core Configuration and Documentation Update
 
 - [x] Task: Update the command namespace in `config/extension.yaml` from `gemini-suite` to `/atomic`. (240c638)
-- [ ] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product.md`.
+- [x] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product.md`. (03b0cc2)
 - [ ] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `tech-stack.md`.
 - [ ] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product-guidelines.md`.
 - [ ] Task: Conductor - User Manual Verification 'Core Update' (Protocol in workflow.md)
