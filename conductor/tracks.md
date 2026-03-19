@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: update command to /atomic**
+- [x] **Track: update command to /atomic**
 *Link: [./tracks/atomic_20260319/](./tracks/atomic_20260319/)*
