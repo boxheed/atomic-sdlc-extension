@@ -6,7 +6,7 @@
 - [x] Task: Implement the core `gemini-suite` command namespace. c09ed6e
 - [x] Task: Create a basic template for a high-precision, atomic skill (including `SKILL.md` and metadata). 4d4862d
 
-## Phase 2: Skill Discovery and Listing
+## Phase 2: Skill Discovery and Listing [checkpoint: b971884]
 
 - [x] Task: Implement a dynamic scanner to identify skills within the suite's directory. fd68537
 - [x] Task: Develop the `gemini-suite list` command to display available skills and their summaries. f003f1c
