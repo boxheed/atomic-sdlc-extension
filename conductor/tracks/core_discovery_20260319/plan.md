@@ -16,4 +16,4 @@
 
 - [x] Task: Verify that new skills are automatically discovered and listed by the suite. 977d606
 - [x] Task: Perform a self-review of the implementation against the product guidelines. bf91851
-- [ ] Task: Conductor - User Manual Verification 'Final Integration' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Final Integration' (Protocol in workflow.md)
