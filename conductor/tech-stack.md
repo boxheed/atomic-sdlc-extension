@@ -3,7 +3,7 @@
 ## Extension and Skill Architecture
 The suite is built as a modular collection of Gemini CLI extensions and atomic skills.
 - **Skill Definitions:** Primarily authored in `SKILL.md` (Markdown) for human readability and rich instruction support.
-- **Extension Metadata:** Managed via `package.json` for installation and `config/extension.yaml` for tool definitions and command routing.
+- **Extension Metadata:** Managed via `gemini-extension.json` for installation and command routing.
 
 ## Prompt Engineering Strategy
 A standardized approach to prompting ensures consistency and high precision across all skills:
