@@ -4,7 +4,6 @@
 The suite is built as a modular collection of Gemini CLI extensions and atomic skills.
 - **Skill Definitions:** Primarily authored in `SKILL.md` (Markdown) for human readability and rich instruction support.
 - **Extension Metadata:** Managed via structured `YAML` or `JSON` configurations for tool definitions and command routing.
-- **Hybrid Execution:** Prompts are supplemented with lightweight shell or Python scripts where programmatic logic is required.
 
 ## Prompt Engineering Strategy
 A standardized approach to prompting ensures consistency and high precision across all skills:
