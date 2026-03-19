@@ -3,7 +3,7 @@
 ## Phase 1: Foundational Structure and Namespace
 
 - [x] Task: Define the extension's directory structure (e.g., `extensions/`, `skills/`). d732186
-- [ ] Task: Implement the core `gemini-suite` command namespace.
+- [x] Task: Implement the core `gemini-suite` command namespace. c09ed6e
 - [ ] Task: Create a basic template for a high-precision, atomic skill (including `SKILL.md` and metadata).
 
 ## Phase 2: Skill Discovery and Listing
