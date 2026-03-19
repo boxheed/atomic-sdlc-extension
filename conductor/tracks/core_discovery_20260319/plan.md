@@ -9,7 +9,7 @@
 ## Phase 2: Skill Discovery and Listing
 
 - [x] Task: Implement a dynamic scanner to identify skills within the suite's directory. fd68537
-- [ ] Task: Develop the `gemini-suite list` command to display available skills and their summaries.
+- [x] Task: Develop the `gemini-suite list` command to display available skills and their summaries. f003f1c
 - [ ] Task: Ensure the discovery system handles metadata (names, descriptions, categories) correctly.
 
 ## Phase 3: Final Integration and Validation
