@@ -1,0 +1,13 @@
+{
+  "name": "atomic-sdlc",
+  "version": "0.1.0",
+  "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
+  "contextFileName": "GEMINI.md",
+  "commands": [
+    {
+      "name": "/atomic",
+      "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC.",
+      "handler": "discovery.listSkills"
+    }
+  ]
+}
