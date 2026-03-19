@@ -27,5 +27,5 @@ A Gemini CLI extension that contains a modular suite of Gemini CLI extensions fo
 - **Full SDLC Coverage:** Tools for analysis and design, requirements gathering and elaboration, and quality control.
 
 ## User Experience (UX)
-- **Dedicated Namespace:** The suite is accessible through a dedicated command namespace (e.g., `gemini-suite <command>`) for clarity and separation of concerns.
+- **Dedicated Namespace:** The suite is accessible through a dedicated command namespace (e.g., `/atomic <command>`) for clarity and separation of concerns.
 - **Seamless Integration:** The extensions work together to provide a cohesive experience throughout the development lifecycle.
