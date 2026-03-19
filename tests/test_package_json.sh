@@ -6,10 +6,10 @@ if [ ! -f package.json ]; then
     exit 1
 fi
 
-name=$(grep '"name":' package.json | sed -E 's/.*: "(.*)".*/\1/')
-version=$(grep '"version":' package.json | sed -E 's/.*: "(.*)".*/\1/')
-description=$(grep '"description":' package.json | sed -E 's/.*: "(.*)".*/\1/')
-extension_path=$(grep '"extensions":' -A 1 package.json | tail -n 1 | sed -E 's/.*: "(.*)".*/\1/')
+# Use node to parse JSON correctly
+name=$(node -p "require('./package.json').name")
+version=$(node -p "require('./package.json').version")
+description=$(node -p "require('./package.json').description")
 
 if [ "$name" != "atomic-sdlc" ]; then
     echo "Error: Incorrect name '$name'. Expected 'atomic-sdlc'."
@@ -26,10 +26,7 @@ if [[ "$description" != *"A modular suite of high-precision, atomic AI agent ski
     exit 1
 fi
 
-if [ "$extension_path" != "config/extension.yaml" ]; then
-    echo "Error: Incorrect extensions path '$extension_path'. Expected 'config/extension.yaml'."
-    exit 1
-fi
+# Extensions check removed as it moved to gemini-extension.json
 
 echo "Success: package.json verification passed."
 exit 0
