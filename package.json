@@ -1,0 +1,20 @@
+{
+  "name": "atomic-sdlc",
+  "version": "0.1.0",
+  "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
+  "extensions": {
+    "gemini": "config/extension.yaml"
+  },
+  "scripts": {
+    "test": "for script in tests/*.sh; do bash \"$script\"; done"
+  },
+  "keywords": [
+    "gemini",
+    "extension",
+    "sdlc",
+    "ai",
+    "agent"
+  ],
+  "author": "Conductor",
+  "license": "MIT"
+}
