@@ -10,9 +10,9 @@
 
 ## Phase 2: Scripts and Tests Refactoring
 
-- [ ] Task: Update all existing scripts (e.g., `scan_skills.sh`, `list_skills.sh`) to use the new command name if necessary.
-- [ ] Task: Refactor all automated test cases and verification scripts to reflect the change to `/atomic`.
-- [ ] Task: Conductor - User Manual Verification 'Scripts and Tests' (Protocol in workflow.md)
+- [x] Task: Update all existing scripts (e.g., `scan_skills.sh`, `list_skills.sh`) to use the new command name if necessary. (248108d)
+- [x] Task: Refactor all automated test cases and verification scripts to reflect the change to `/atomic`. (248108d)
+- [x] Task: Conductor - User Manual Verification 'Scripts and Tests' (Protocol in workflow.md) (90d2242)
 
 ## Phase 3: Final Integration and Validation
 
