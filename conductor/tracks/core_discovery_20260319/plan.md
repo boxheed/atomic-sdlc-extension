@@ -4,7 +4,7 @@
 
 - [x] Task: Define the extension's directory structure (e.g., `extensions/`, `skills/`). d732186
 - [x] Task: Implement the core `gemini-suite` command namespace. c09ed6e
-- [ ] Task: Create a basic template for a high-precision, atomic skill (including `SKILL.md` and metadata).
+- [x] Task: Create a basic template for a high-precision, atomic skill (including `SKILL.md` and metadata). 4d4862d
 
 ## Phase 2: Skill Discovery and Listing
 
