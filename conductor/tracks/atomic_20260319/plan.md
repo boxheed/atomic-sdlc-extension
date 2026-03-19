@@ -6,7 +6,7 @@
 - [x] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product.md`. (03b0cc2)
 - [x] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `tech-stack.md`. (03b0cc2)
 - [x] Task: Systematically replace all occurrences of `gemini-suite` with `/atomic` in `product-guidelines.md`. (6163b76)
-- [ ] Task: Conductor - User Manual Verification 'Core Update' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Core Update' (Protocol in workflow.md) (248108d)
 
 ## Phase 2: Scripts and Tests Refactoring
 
