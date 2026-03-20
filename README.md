@@ -35,12 +35,8 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 
 | Command | Category | Responsibility |
 |---------|----------|----------------|
-| `/atomic:audit` | Discovery | Identifies logic gaps and ambiguities in requirements |
-| `/atomic:atomize` | Discovery | Breaks Epics into the smallest possible testable Jira/Linear tickets. | 
-| `/atomic:schema` | Design | Generates SQL/NoSQL schemas from business entities.| 
-| `/atomic:logic-check` | Review | Scans code diffs for off-by-one errors and infinite loops. | 
-| `/atomic:a11y` | NFR | Audits JSX/HTML for ARIA compliance and accessibility.
-| `/atomic:latency` | NFR | Estimates millisecond impact of a specific code path. |
+| `/atomic:analyse` | Design | To review and expand existing requirements |
+| `/atomic:architect` | Design | To review requirements and system and propose the technical changes |
 
 ## 📦 Extension Structure
 
