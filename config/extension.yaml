@@ -1,7 +1,0 @@
-name: /atomic
-description: A modular suite of high-precision, atomic AI agent skills for the SDLC.
-commands:
-  list:
-    description: List all available extensions and skills within the suite.
-    type: internal
-    handler: discovery.listSkills
