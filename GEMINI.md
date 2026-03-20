@@ -17,5 +17,6 @@ Every skill has a single purpose, a well defined input and a well defined output
 | Command | Category | Responsibility |
 |---------|----------|----------------|
 | `/atomic:analyse` | Design | To review and expand existing requirements |
+| `/atomic:architect` | Design | To review requirements and system and propose the technical changes |
 | ... | ... | ... |
 
