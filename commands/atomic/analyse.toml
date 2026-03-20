@@ -21,6 +21,7 @@ Execute the following steps sequentially:
 
 ### 1. Requirements Interrogation
 * Read the provided issue payload.
+* If no issue payload is provided output a message and then stop.
 * Critically evaluate the request: What is the core user goal? What happens if the user provides invalid input? Are there implicit dependencies or conflicting features in the product?
 * Scan the current directory and sub directories for information relating to the requirement.
 
