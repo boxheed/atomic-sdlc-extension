@@ -33,6 +33,40 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 
 ## 🛠️ Available Atomic Skills
 
+| Command Name | Category | Description | Purpose | Available |
+| :--- | :--- | :--- | :--- | :--- |
+| **Discovery** | | | | |
+| `/atomic:elicit` | Discovery | Extracts core needs from raw stakeholder input. | Filters noise to find true business value. | ❌ |
+| `/atomic:req-critique` | Discovery | Audits requirements for ambiguity, feasibility, and contradictions. | Ensures requirements are "ready for dev." | ❌ |
+| `/atomic:atomize` | Discovery | Breaks large requirements into the smallest testable units. | Prevents scope creep and simplifies tracking. | ❌ |
+| `/atomic:criteria` | Discovery | Generates "Given/When/Then" acceptance criteria. | Defines the objective "definition of done." | ❌ |
+| **Design** | | | | 
+| `/atomic:schema` | Design | Generates database structures (SQL/NoSQL) from entities. | Ensures data integrity before code is written. | ❌ |
+| `/atomic:arch-critique` | Design | Reviews schemas/API specs for normalization and scalability. | Prevents "technical debt" in the blueprint. | ❌ |
+| `/atomic:api-spec` | Design | Drafts OpenAPI/Swagger specs for system endpoints. | Creates the "contract" for front/back-end dev. | ❌ |
+| `/atomic:wireframe` | Design | Generates low-fidelity structural UI layouts. | Validates user flow before aesthetic design. | ❌ |
+| `/atomic:ux-critique` | Design | Analyzes wireframes for usability and flow logic. | Identifies friction points before implementation. | ❌ |
+| **Implementation** | | | | |
+| `/atomic:code-gen` | Implementation | Generates modular, single-purpose functions/classes. | Converts blueprints into functional logic. | ❌ |
+| `/atomic:code-critique` | Implementation | Reviews code for logic flaws, naming, and complexity. | Acts as an automated "Peer Reviewer." | ❌ |
+| `/atomic:doc-gen` | Implementation | Writes "how/why" documentation based on code logic. | Ensures the system is maintainable by humans. | ❌ |
+| `/atomic:doc-audit` | Implementation | Verifies that documentation matches the actual code logic. | Prevents "Stale Docs" that mislead developers. | ❌ |
+| **Verification** | | | | |
+| `/atomic:test-gen` | Verification | Authors unit tests for individual logic paths. | Proves code correctness at the lowest level. | ❌ |
+| `/atomic:test-audit` | Verification | Critiques test suites for coverage gaps and "weak" assertions. | Ensures the tests are actually effective. | ❌ |
+| `/atomic:edge-hunt` | Verification | Identifies "unhappy paths" and stress-test inputs. | Prevents crashes from unexpected behavior. | ❌ |
+| `/atomic:profile` | Verification | Identifies CPU/Memory bottlenecks in a code block. | Ensures performance goals are met. | ❌ |
+| **Deployment** | | | | |
+| `/atomic:pipeline` | Deployment | Generates CI/CD scripts for automated movement. | Automates the path from code to production. | ❌ |
+| `/atomic:sec-audit` | Deployment | Scans IaC and pipeline configs for security holes. | Prevents "Insecure-by-Default" deployments. | ❌ |
+| `/atomic:provision` | Deployment | Generates Infrastructure-as-Code (IaC) for environments. | Ensures production matches dev environments. | ❌ |
+| **Maintenance** | | | | |
+| `/atomic:telemetry` | Maintenance | Suggests instrumentation points for health monitoring. | Provides real-time visibility into live code. | ❌ |
+| `/atomic:rca` | Maintenance | Analyzes error logs to find the source of a failure. | Finds the root cause of production bugs. | ❌ |
+| `/atomic:post-mortem` | Maintenance | Critiques an incident response to suggest process fixes. | Facilitates "The Learning Loop" for the team. | ❌ |
+
+
+### Deprecated
 | Command | Category | Responsibility |
 |---------|----------|----------------|
 | `/atomic:analyse` | Design | To review and expand existing requirements |
