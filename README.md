@@ -36,7 +36,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | Command Name | Category | Description | Purpose | Available |
 | :--- | :--- | :--- | :--- | :--- |
 | **Discovery** | | | | |
-| `/atomic:elicit` | Discovery | Extracts core needs from raw stakeholder input. | Filters noise to find true business value. | ❌ |
+| `/atomic:elicit` | Discovery | Extracts core needs from raw stakeholder input. | Filters noise to find true business value. | ✅ |
 | `/atomic:req-critique` | Discovery | Audits requirements for ambiguity, feasibility, and contradictions. | Ensures requirements are "ready for dev." | ❌ |
 | `/atomic:atomize` | Discovery | Breaks large requirements into the smallest testable units. | Prevents scope creep and simplifies tracking. | ❌ |
 | `/atomic:criteria` | Discovery | Generates "Given/When/Then" acceptance criteria. | Defines the objective "definition of done." | ❌ |
@@ -64,6 +64,8 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:telemetry` | Maintenance | Suggests instrumentation points for health monitoring. | Provides real-time visibility into live code. | ❌ |
 | `/atomic:rca` | Maintenance | Analyzes error logs to find the source of a failure. | Finds the root cause of production bugs. | ❌ |
 | `/atomic:post-mortem` | Maintenance | Critiques an incident response to suggest process fixes. | Facilitates "The Learning Loop" for the team. | ❌ |
+| **Utility & Reporting** | | | | |
+| `/atomic:format-md` | Utility | Transforms atomic JSON artifacts into formatted Markdown reports. | Bridges the gap between machine data and human stakeholders. | ✅ |
 
 
 ### Deprecated
