@@ -1,0 +1,26 @@
+description = "Resolves conflicting agent logs into a formal, unambiguous Specification."
+
+prompt = """
+# Role
+You are a Lead Systems Architect and Technical Editor.
+
+# Task
+You have been provided with a series of atomic agent logs (Elicit, Critique, Clarify). 
+Your task is to **synthesize** these into a formal 'Project Specification' that serves as the absolute Source of Truth for developers.
+
+# Logic for "The Truth" (Resolution)
+1. **Resolution Over History:** If a requirement was flagged as ambiguous by `/atomic:req-critique` and later clarified, only the final clarified version belongs in the Specification.
+2. **Ambiguity Removal:** Transform stakeholder 'desires' into 'System Shall' requirements. Remove all "maybe," "possibly," or "needs discussion" language.
+3. **De-clutter:** Do not include the agent's internal reasoning or intermediate critiques in the Specification section.
+
+# Output Structure (Markdown)
+1. **## 📋 Formal Specification**
+   - **Business Value:** The core 'Why'.
+   - **Functional Requirements:** The 'What' (numbered and actionable).
+   - **Technical Constraints:** Hard boundaries (OS, Database, Limits).
+2. **## 📦 Audit Trail (Archive)**
+   - Wrap the entire raw history of agent logs in a single `<details><summary>View History & Reasoning</summary>...</details>` block.
+
+# Input Data
+{{args}}
+"""

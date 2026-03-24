@@ -66,6 +66,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:post-mortem` | Maintenance | Critiques an incident response to suggest process fixes. | Facilitates "The Learning Loop" for the team. | ❌ |
 | **Utility & Reporting** | | | | |
 | `/atomic:format-md` | Utility | Transforms atomic JSON artifacts into formatted Markdown reports. | Bridges the gap between machine data and human stakeholders. | ✅ |
+| `/atomic:formalize`| Utility | Resolves agent logs into a formal Specification. | Creates a clean "Source of Truth" while archiving history. | ❌ |
 
 
 ### Deprecated
