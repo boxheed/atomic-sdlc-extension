@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
   "scripts": {
-    "test": "for script in tests/*.sh; do bash \"$script\"; done"
+    "test": "for script in tests/*.sh; do bash \"$script\"; done",
+    "release": "standard-version",
+    "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ skills/ README.md"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   },
   "keywords": [
     "gemini",
