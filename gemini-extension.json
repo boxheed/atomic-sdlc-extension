@@ -1,6 +1,6 @@
 {
   "name": "atomic-sdlc",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
   "contextFileName": "GEMINI.md"
 }

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.10](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.9...v0.2.10) (2026-03-25)
+
+
+### Features
+
+* added code change and documentation verification task ([dd03f88](https://github.com/boxheed/atomic-sdlc-extension/commit/dd03f8823396cab6044fae2c2e10f1ab66040b4b))
+* code author agent ([d1a19f8](https://github.com/boxheed/atomic-sdlc-extension/commit/d1a19f8fccd35af2a288c3454bc06cde06084606))
+* code reviewer agent ([cf96f47](https://github.com/boxheed/atomic-sdlc-extension/commit/cf96f4745fe288c8b95349b9db303586dad43fbd))
+
 ### [0.2.9](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.8...v0.2.9) (2026-03-25)
 
 
