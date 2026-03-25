@@ -30,46 +30,46 @@ gemini extensions install https://github.com/your-org/`atomic-sdlc`
 ```Bash
 gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile picture."
 ```
+### 🛠️ The Atomic Skillset (Master Registry)
 
-## 🛠️ Available Atomic Skills
-
-| Command Name | Category | Description | Purpose | Available |
+| Command Name | Category | Description | Purpose | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **Discovery** | | | | |
 | `/atomic:elicit` | Discovery | Extracts core needs from raw stakeholder input. | Filters noise to find true business value. | ✅ |
-| `/atomic:audit` | Discovery | Audits requirements for ambiguity, feasibility, and contradictions. | Ensures requirements are "ready for dev." | ✅ |
-| `/atomic:atomize` | Discovery | Breaks large requirements into the smallest testable units. | Prevents scope creep and simplifies tracking. | ✅ |
-| `/atomic:criteria` | Discovery | Generates "Given/When/Then" acceptance criteria. | Defines the objective "definition of done." | ✅ |
-| `/atomic:constrain` | Discovery | Identifies technical guardrails (Security, Perf, etc.)	Raw stakeholder input. | A JSON file of NFRs and assumptions. | ✅ |
-| **Design** | | | | 
-| `/atomic:blueprint` | Design | Architectures the high-level design and manifest. | Decides which design components (DB, API, etc.) are needed.| ✅ |
-| `/atomic:schema` | Design | Generates database structures (SQL/NoSQL) from entities. | Ensures data integrity before code is written. | ✅ |
-| `/atomic:evaluate` | Design | Reviews schemas/API specs for normalization and scalability. | Prevents "technical debt" in the blueprint. | ✅ |
-| `/atomic:interface` | Design | Drafts OpenAPI/Swagger specs for system endpoints. | Creates the "contract" for front/back-end dev. | ✅ |
-| `/atomic:layout` | Design | Generates low-fidelity structural UI layouts. | Validates user flow before aesthetic design. | ✅ |
-| `/atomic:inspect` | Design | Analyzes wireframes for usability and flow logic. | Identifies friction points before implementation. | ✅ |
+| `/atomic:constrain` | Discovery | Identifies NFRs (Security, Perf, Scalability). | Sets the technical boundaries for the system. | ✅ |
+| `/atomic:audit` | Discovery | Examines drafts for ambiguity and contradictions. | The "Gatekeeper" for requirement quality. | ✅ |
+| `/atomic:formalize` | Utility | Reconciles logs into a formal Specification. | Creates the "Source of Truth" artifact. | ✅ |
+| `/atomic:atomize` | Discovery | Slices the Specification into vertical User Stories. | Converts the "What" into actionable tasks. | ✅ |
+| `/atomic:criteria` | Discovery | Generates Gherkin Given/When/Then scenarios. | Defines the objective "Definition of Done." | ✅ |
+| **Design** | | | | |
+| `/atomic:blueprint` | Design | Architects high-level design and component manifest. | The "Master Plan" for the Design phase. | ✅ |
+| `/atomic:evaluate` | Design | Critiques the blueprint for over-engineering/risk. | Ensures the tech plan is sound and scalable. | ✅ |
+| `/atomic:schema` | Design | Generates database structures (SQL/NoSQL). | Builds the "Internal" data layer. | ✅ |
+| `/atomic:interface` | Design | Generates API contracts (OpenAPI/Swagger). | Builds the "External" communication layer. | ✅ |
+| `/atomic:layout` | Design | Generates structural UI wireframes/user flows. | Defines the user's interface and journey. | ✅ |
+| `/atomic:inspect` | Design | Performs heuristic usability audits on layouts. | Ensures the "Human" side of the design works. | ✅ |
 | **Implementation** | | | | |
-| `/atomic:author` | Implementation | Generates modular, single-purpose functions/classes. | Converts blueprints into functional logic. | ✅ |
-| `/atomic:review` | Implementation | Reviews code for logic flaws, naming, and complexity. | Acts as an automated "Peer Reviewer." | ✅ |
-| `/atomic:document` | Implementation | Writes "how/why" documentation based on code logic. | Ensures the system is maintainable by humans. | ✅ |
-| `/atomic:verify` | Implementation | Verifies that documentation matches the actual code logic. | Prevents "Stale Docs" that mislead developers. | ✅ |
+| `/atomic:author` | Implementation | Writes modular code based on design contracts. | Turns blueprints into functional logic. | ✅ |
+| `/atomic:refactor` | Implementation | Cleans up code smells, debt, and style alignment. | Ensures the code is "Clean" before the PR. | ❌ |
+| `/atomic:integrate` | Implementation | Checks for cross-module regressions and breaks. | Ensures the new unit fits the existing system. | ❌ |
+| `/atomic:review` | Implementation | Performs a code review for logic and security. | Acts as the "Quality Gate" for the codebase. | ✅ |
+| `/atomic:document` | Implementation | Writes "how/why" technical documentation. | Ensures the system is maintainable by humans. | ✅ |
+| `/atomic:verify` | Implementation | Audits documentation against the actual code logic. | Prevents "Stale Docs" from misleading devs. | ✅ |
 | **Verification** | | | | |
 | `/atomic:test` | Verification | Authors unit tests for individual logic paths. | Proves code correctness at the lowest level. | ✅ |
-| `/atomic:scrutinize` | Verification | Critiques test suites for coverage gaps and "weak" assertions. | Ensures the tests are actually effective. | ✅ |
-| `/atomic:probe` | Verification | Identifies "unhappy paths" and stress-test inputs. | Prevents crashes from unexpected behavior. | ✅ |
-| `/atomic:profile` | Verification | Identifies CPU/Memory bottlenecks in a code block. | Ensures performance goals are met. | ✅ |
+| `/atomic:scrutinize` | Verification | Critiques test suites for coverage and weak logic. | Ensures the tests are actually effective. | ✅ |
+| `/atomic:probe` | Verification | Hunts for "unhappy paths" and stress-test data. | Prevents crashes from unexpected behavior. | ✅ |
+| `/atomic:profile` | Verification | Identifies performance/NFR bottlenecks in code. | Ensures latency and memory goals are met. | ✅ |
 | **Deployment** | | | | |
-| `/atomic:pipeline` | Deployment | Generates CI/CD scripts for automated movement. | Automates the path from code to production. | ❌ |
-| `/atomic:sec-audit` | Deployment | Scans IaC and pipeline configs for security holes. | Prevents "Insecure-by-Default" deployments. | ❌ |
-| `/atomic:provision` | Deployment | Generates Infrastructure-as-Code (IaC) for environments. | Ensures production matches dev environments. | ❌ |
+| `/atomic:pipeline` | Deployment | Generates CI/CD scripts (GitHub Actions, etc.). | Automates the path from code to production. | ❌ |
+| `/atomic:harden` | Deployment | Scans configs/dependencies for security holes. | Prevents "Insecure-by-Default" deployments. | ❌ |
+| `/atomic:provision` | Deployment | Generates Infrastructure-as-Code (IaC/Terraform). | Ensures production matches dev environments. | ❌ |
 | **Maintenance** | | | | |
-| `/atomic:telemetry` | Maintenance | Suggests instrumentation points for health monitoring. | Provides real-time visibility into live code. | ❌ |
-| `/atomic:rca` | Maintenance | Analyzes error logs to find the source of a failure. | Finds the root cause of production bugs. | ❌ |
-| `/atomic:post-mortem` | Maintenance | Critiques an incident response to suggest process fixes. | Facilitates "The Learning Loop" for the team. | ❌ |
-| **Utility & Reporting** | | | | |
-| `/atomic:format-md` | Utility | Transforms atomic JSON artifacts into formatted Markdown reports. | Bridges the gap between machine data and human stakeholders. | ✅ |
-| `/atomic:formalize`| Utility | Resolves agent logs into a formal Specification. | Creates a clean "Source of Truth" while archiving history. | ✅ |
-
+| `/atomic:telemetry` | Maintenance | Suggests instrumentation and logging points. | Provides visibility into live code health. | ❌ |
+| `/atomic:diagnose` | Maintenance | Analyzes error logs to find failure root causes. | Accelerates the fix for production bugs. | ❌ |
+| `/atomic:retrospect` | Maintenance | Critiques incident response for process fixes. | Facilitates the "Learning Loop" for the team. | ❌ |
+| **Reporting** | | | | |
+| `/atomic:format-md` | Utility | Transforms JSON artifacts into human reports. | Makes machine data readable for people. | ✅ |
 
 ### Deprecated
 | Command | Category | Responsibility |
