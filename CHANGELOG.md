@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.3...v0.2.4) (2026-03-25)
+
+
+### Features
+
+* added a requirements audit agent ([413489a](https://github.com/boxheed/atomic-sdlc-extension/commit/413489a68f7d369d88443e6199a897a0790f0a3a))
+
 ### [0.2.3](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.2...v0.2.3) (2026-03-25)
 
 
