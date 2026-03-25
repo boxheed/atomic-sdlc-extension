@@ -50,9 +50,9 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:inspect` | Design | Analyzes wireframes for usability and flow logic. | Identifies friction points before implementation. | ✅ |
 | **Implementation** | | | | |
 | `/atomic:author` | Implementation | Generates modular, single-purpose functions/classes. | Converts blueprints into functional logic. | ✅ |
-| `/atomic:review` | Implementation | Reviews code for logic flaws, naming, and complexity. | Acts as an automated "Peer Reviewer." | ❌ |
-| `/atomic:doc-gen` | Implementation | Writes "how/why" documentation based on code logic. | Ensures the system is maintainable by humans. | ❌ |
-| `/atomic:doc-audit` | Implementation | Verifies that documentation matches the actual code logic. | Prevents "Stale Docs" that mislead developers. | ❌ |
+| `/atomic:review` | Implementation | Reviews code for logic flaws, naming, and complexity. | Acts as an automated "Peer Reviewer." | ✅ |
+| `/atomic:document` | Implementation | Writes "how/why" documentation based on code logic. | Ensures the system is maintainable by humans. | ✅ |
+| `/atomic:veriry` | Implementation | Verifies that documentation matches the actual code logic. | Prevents "Stale Docs" that mislead developers. | ✅ |
 | **Verification** | | | | |
 | `/atomic:test-gen` | Verification | Authors unit tests for individual logic paths. | Proves code correctness at the lowest level. | ❌ |
 | `/atomic:test-audit` | Verification | Critiques test suites for coverage gaps and "weak" assertions. | Ensures the tests are actually effective. | ❌ |
