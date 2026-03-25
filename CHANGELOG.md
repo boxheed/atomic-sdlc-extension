@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.1.1...v0.2.0) (2026-03-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* changed the name of the extension from atomic to atomic-sdlc
+
+### Features
+
+* changed the name of the extension from atomic to atomic-sdlc ([4db9b95](https://github.com/boxheed/atomic-sdlc-extension/commit/4db9b95194d0e6b5db7a6aea890151cc5dff8720))
+
 ### 0.1.1 (2026-03-25)
 
 
