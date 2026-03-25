@@ -57,7 +57,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:test` | Verification | Authors unit tests for individual logic paths. | Proves code correctness at the lowest level. | ✅ |
 | `/atomic:scrutinize` | Verification | Critiques test suites for coverage gaps and "weak" assertions. | Ensures the tests are actually effective. | ✅ |
 | `/atomic:probe` | Verification | Identifies "unhappy paths" and stress-test inputs. | Prevents crashes from unexpected behavior. | ✅ |
-| `/atomic:profile` | Verification | Identifies CPU/Memory bottlenecks in a code block. | Ensures performance goals are met. | ❌ |
+| `/atomic:profile` | Verification | Identifies CPU/Memory bottlenecks in a code block. | Ensures performance goals are met. | ✅ |
 | **Deployment** | | | | |
 | `/atomic:pipeline` | Deployment | Generates CI/CD scripts for automated movement. | Automates the path from code to production. | ❌ |
 | `/atomic:sec-audit` | Deployment | Scans IaC and pipeline configs for security holes. | Prevents "Insecure-by-Default" deployments. | ❌ |
