@@ -55,7 +55,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:verify` | Implementation | Verifies that documentation matches the actual code logic. | Prevents "Stale Docs" that mislead developers. | ✅ |
 | **Verification** | | | | |
 | `/atomic:test` | Verification | Authors unit tests for individual logic paths. | Proves code correctness at the lowest level. | ✅ |
-| `/atomic:test-audit` | Verification | Critiques test suites for coverage gaps and "weak" assertions. | Ensures the tests are actually effective. | ❌ |
+| `/atomic:scrutinize` | Verification | Critiques test suites for coverage gaps and "weak" assertions. | Ensures the tests are actually effective. | ❌ |
 | `/atomic:edge-hunt` | Verification | Identifies "unhappy paths" and stress-test inputs. | Prevents crashes from unexpected behavior. | ❌ |
 | `/atomic:profile` | Verification | Identifies CPU/Memory bottlenecks in a code block. | Ensures performance goals are met. | ❌ |
 | **Deployment** | | | | |
