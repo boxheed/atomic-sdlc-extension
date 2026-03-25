@@ -47,7 +47,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:evaluate` | Design | Reviews schemas/API specs for normalization and scalability. | Prevents "technical debt" in the blueprint. | ✅ |
 | `/atomic:interface` | Design | Drafts OpenAPI/Swagger specs for system endpoints. | Creates the "contract" for front/back-end dev. | ✅ |
 | `/atomic:layout` | Design | Generates low-fidelity structural UI layouts. | Validates user flow before aesthetic design. | ✅ |
-| `/atomic:ux-critique` | Design | Analyzes wireframes for usability and flow logic. | Identifies friction points before implementation. | ❌ |
+| `/atomic:inspect` | Design | Analyzes wireframes for usability and flow logic. | Identifies friction points before implementation. | ✅ |
 | **Implementation** | | | | |
 | `/atomic:code-gen` | Implementation | Generates modular, single-purpose functions/classes. | Converts blueprints into functional logic. | ❌ |
 | `/atomic:code-critique` | Implementation | Reviews code for logic flaws, naming, and complexity. | Acts as an automated "Peer Reviewer." | ❌ |
