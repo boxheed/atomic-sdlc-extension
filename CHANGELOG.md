@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.8](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.7...v0.2.8) (2026-03-25)
+
+
+### Features
+
+* architecture evaluation agent ([72d8ca4](https://github.com/boxheed/atomic-sdlc-extension/commit/72d8ca44c039baf200b0cae46f4f038f331e92c2))
+* ux agent ([3017de3](https://github.com/boxheed/atomic-sdlc-extension/commit/3017de3d09d6062030e12d284ead16742d68c33d))
+
 ### [0.2.7](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.6...v0.2.7) (2026-03-25)
 
 
