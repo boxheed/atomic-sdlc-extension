@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.0...v0.2.1) (2026-03-25)
+
+
+### Features
+
+* implemented a non function constraint agent ([2fbe805](https://github.com/boxheed/atomic-sdlc-extension/commit/2fbe805a1a6c614e0ec897e9e29b51f74c12636e))
+
 ## [0.2.0](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.1.1...v0.2.0) (2026-03-25)
 
 
