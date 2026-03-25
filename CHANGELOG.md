@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.11](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.10...v0.2.11) (2026-03-25)
+
+
+### Features
+
+* added edge case agent ([cf6dc0b](https://github.com/boxheed/atomic-sdlc-extension/commit/cf6dc0b76531bf64490cab0fb87bcba057081649))
+* added nfr verifier ([5a5e02f](https://github.com/boxheed/atomic-sdlc-extension/commit/5a5e02f60a2a7daf379f091e5d81db47a27c1f56))
+* added scrutinize agent to review the tests ([6705d3d](https://github.com/boxheed/atomic-sdlc-extension/commit/6705d3dc66c5076fa0e2baac8e19c0274cf34804))
+* creates and updates unit tests ([adb0fcc](https://github.com/boxheed/atomic-sdlc-extension/commit/adb0fcc751ac4020e1efee6b961ffdaed913c477))
+
 ### [0.2.10](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.9...v0.2.10) (2026-03-25)
 
 
