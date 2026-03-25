@@ -50,7 +50,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:inspect` | Design | Analyzes wireframes for usability and flow logic. | Identifies friction points before implementation. | ✅ |
 | **Implementation** | | | | |
 | `/atomic:author` | Implementation | Generates modular, single-purpose functions/classes. | Converts blueprints into functional logic. | ✅ |
-| `/atomic:code-critique` | Implementation | Reviews code for logic flaws, naming, and complexity. | Acts as an automated "Peer Reviewer." | ❌ |
+| `/atomic:review` | Implementation | Reviews code for logic flaws, naming, and complexity. | Acts as an automated "Peer Reviewer." | ❌ |
 | `/atomic:doc-gen` | Implementation | Writes "how/why" documentation based on code logic. | Ensures the system is maintainable by humans. | ❌ |
 | `/atomic:doc-audit` | Implementation | Verifies that documentation matches the actual code logic. | Prevents "Stale Docs" that mislead developers. | ❌ |
 | **Verification** | | | | |
