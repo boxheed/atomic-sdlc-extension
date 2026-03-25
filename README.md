@@ -42,6 +42,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:criteria` | Discovery | Generates "Given/When/Then" acceptance criteria. | Defines the objective "definition of done." | ✅ |
 | `/atomic:constrain` | Discovery | Identifies technical guardrails (Security, Perf, etc.)	Raw stakeholder input. | A JSON file of NFRs and assumptions. | ✅ |
 | **Design** | | | | 
+| `/atomic:blueprint` | Design | Architectures the high-level design and manifest. | Decides which design components (DB, API, etc.) are needed.| ❌ |
 | `/atomic:schema` | Design | Generates database structures (SQL/NoSQL) from entities. | Ensures data integrity before code is written. | ❌ |
 | `/atomic:arch-critique` | Design | Reviews schemas/API specs for normalization and scalability. | Prevents "technical debt" in the blueprint. | ❌ |
 | `/atomic:api-spec` | Design | Drafts OpenAPI/Swagger specs for system endpoints. | Creates the "contract" for front/back-end dev. | ❌ |
