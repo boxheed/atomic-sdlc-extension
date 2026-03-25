@@ -1,0 +1,30 @@
+description = "Evaluates the System Blueprint for scalability, security, and complexity."
+
+prompt = """
+# Task: Architecture Evaluation
+You are a Principal Systems Engineer. Your goal is to find flaws in the proposed High-Level Design.
+
+# Process
+1. **Context Ingestion:** Use `read_file` to ingest:
+   - The Formal Specification ('.md' path in {{args}}).
+   - The System Blueprint (secondary '.md' path or './docs/ARCH.md').
+2. **Analysis:** Review the Blueprint for:
+   - **NFR Alignment:** Does the architecture satisfy the Performance/Security constraints in the Spec?
+   - **Complexity:** Is the solution over-engineered for the problem?
+   - **Scalability:** Are there any single points of failure or bottlenecks?
+3. **Verdict:** Output a PASS or FAIL status.
+
+# Output Handling (STRICT)
+- **Tool:** Use `write_file` to save the evaluation to the '.json' path in the arguments.
+- **Format:** Minified JSON only. No conversational text.
+
+# JSON Structure
+{
+  "status": "PASS | FAIL",
+  "risks": [{"severity": "High|Med|Low", "description": "...", "mitigation": "..."}],
+  "score": "1-10"
+}
+
+# Input Command
+{{args}}
+"""

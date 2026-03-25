@@ -44,7 +44,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | **Design** | | | | 
 | `/atomic:blueprint` | Design | Architectures the high-level design and manifest. | Decides which design components (DB, API, etc.) are needed.| ✅ |
 | `/atomic:schema` | Design | Generates database structures (SQL/NoSQL) from entities. | Ensures data integrity before code is written. | ✅ |
-| `/atomic:arch-critique` | Design | Reviews schemas/API specs for normalization and scalability. | Prevents "technical debt" in the blueprint. | ❌ |
+| `/atomic:evaluate` | Design | Reviews schemas/API specs for normalization and scalability. | Prevents "technical debt" in the blueprint. | ✅ |
 | `/atomic:interface` | Design | Drafts OpenAPI/Swagger specs for system endpoints. | Creates the "contract" for front/back-end dev. | ✅ |
 | `/atomic:wireframe` | Design | Generates low-fidelity structural UI layouts. | Validates user flow before aesthetic design. | ❌ |
 | `/atomic:ux-critique` | Design | Analyzes wireframes for usability and flow logic. | Identifies friction points before implementation. | ❌ |
