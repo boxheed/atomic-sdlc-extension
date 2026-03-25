@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.12](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.11...v0.2.12) (2026-03-25)
+
+
+### Features
+
+* verify ([5a1f734](https://github.com/boxheed/atomic-sdlc-extension/commit/5a1f73447827410b8047b97f8392fc81fb538667))
+
 ### [0.2.11](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.10...v0.2.11) (2026-03-25)
 
 
