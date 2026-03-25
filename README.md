@@ -40,6 +40,7 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:req-critique` | Discovery | Audits requirements for ambiguity, feasibility, and contradictions. | Ensures requirements are "ready for dev." | ❌ |
 | `/atomic:atomize` | Discovery | Breaks large requirements into the smallest testable units. | Prevents scope creep and simplifies tracking. | ❌ |
 | `/atomic:criteria` | Discovery | Generates "Given/When/Then" acceptance criteria. | Defines the objective "definition of done." | ❌ |
+| `/atomic:constrain` | Discovery | Identifies technical guardrails (Security, Perf, etc.)	Raw stakeholder input. | A JSON file of NFRs and assumptions. | ✅ |
 | **Design** | | | | 
 | `/atomic:schema` | Design | Generates database structures (SQL/NoSQL) from entities. | Ensures data integrity before code is written. | ❌ |
 | `/atomic:arch-critique` | Design | Reviews schemas/API specs for normalization and scalability. | Prevents "technical debt" in the blueprint. | ❌ |
