@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.5...v0.2.6) (2026-03-25)
+
+
+### Features
+
+* added on the architectural blueprint agent ([e726444](https://github.com/boxheed/atomic-sdlc-extension/commit/e726444ac27ee1841fb1fcb7d9ef640f316bb412))
+* agent to create swagger docs from specifications ([5d39222](https://github.com/boxheed/atomic-sdlc-extension/commit/5d392227fb6d68b1e5d1a9fe537778136b8ed0b2))
+
 ### [0.2.5](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.4...v0.2.5) (2026-03-25)
 
 ### [0.2.4](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.3...v0.2.4) (2026-03-25)
