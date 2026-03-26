@@ -1,100 +1,122 @@
 # 📂 `atomic-sdlc`
 
-**A Modular Suite of Gemini CLI Extensions for the Software Development Lifecycle.**
+**The 2026 Modular Suite of Gemini CLI Extensions for the Software Development Lifecycle.**
 
-``atomic-sdlc`` is a collection of high-precision, single-responsibility AI agent skills. Unlike "monolithic" AI assistants, these skills are designed to be atomic: they do exactly one thing (e.g., audit a requirement, profile latency, or detect logic flaws) and they do it with strict, machine-readable output.This repository is built to be consumed by Workflow Engines and executed on Remote Workers using the Gemini CLI.
+`atomic-sdlc` is a high-precision collection of single-responsibility AI agent skills. Unlike "monolithic" AI assistants, these skills are **Atomic**: they function as pure technical units that perform one specific transformation (e.g., auditing a requirement, generating a schema, or diagnosing a production crash) with strict, machine-readable handshakes.
 
-## 🧩 The Atomic Philosophy
+---
 
-Most AI agents fail because they try to do too much, leading to "context drift" and hallucinations. `atomic-sdlc` follows the Single Responsibility Principle:
+## 🏗️ The Atomic Philosophy
 
-1. Discrete Context: Every skill only receives the data it needs to perform its specific task.
-2. Contract-Bound: All outputs are validated against a JSON Schema before being returned.
-3. Stateless & Chainable: Skills are designed to be piped together (e.g., `Audit -> Atomize -> Scaffold`).
+Most AI implementations fail due to "context drift." `atomic-sdlc` eliminates this by treating every agent as a **Pure Function**:
 
-## 🏗️ Architecture
+1.  **Discrete Context:** Agents only receive the specific data required for their task.
+2.  **Stateless Handshakes:** Communication happens via file artifacts (`SPEC.md`, `ARCH.md`, `.json`), ensuring no reliance on conversation history.
+3.  **Halt-on-Failure:** Quality gates (Auditors/Critics) must output an explicit `PASS` or `FAIL` status to control the pipeline flow.
+4.  **Contract-Bound:** All machine-to-machine outputs follow a minified JSON schema for deterministic parsing.
 
-1. Workflow Engine: (e.g., Jenkins, GitHub Actions, or a custom engine) orchestrates the sequence of tasks.
-2. Worker: A "dumb" execution node with the Gemini CLI installed.
-3. Extension: The worker pulls the `atomic-sdlc` extension, which contains the persona (Prompt) and the interface (Command).
-4. Gemini CLI: The runtime that executes the skill and validates the handshake.
+---
+
+## 🗺️ The Pipeline Flow
+
+[Image of a modular software development lifecycle showing the flow from discovery to maintenance]
+
+The framework follows a sequential "Handshake" where the output of one phase becomes the "Source of Truth" for the next.
+
+1.  **Discovery:** Stakeholder Input $\rightarrow$ `SPEC.md`
+2.  **Design:** `SPEC.md` $\rightarrow$ `ARCH.md` & `CONTRACTS`
+3.  **Implementation:** `CONTRACTS` $\rightarrow$ `SOURCE_CODE`
+4.  **Verification:** `SOURCE_CODE` $\rightarrow$ `PASS/FAIL`
+5.  **Maintenance:** `LOGS` $\rightarrow$ `RETROSPECTIVE`
+
+---
+
+## 🤖 AI-Driven Maintenance
+
+This repository is designed to be maintained and evolved by AI. 
+
+An `.ai-instructions.md` file is located in the root. When using a coding assistant (Gemini in VS Code, IDX, or Cursor) to update or add agents, it will automatically adhere to the **Atomic Laws** (Verb-based naming, Tool-inference, No embedded scripts).
+
+**To update an agent:**
+> "Gemini, use the project rules to refactor `/atomic:audit` to include a check for data privacy compliance."
+
+---
 
 ## 🚀 Quick Start
 
-1. Install Gemini CLI on your WorkerEnsure your worker has the Gemini CLI runtime installed and authenticated.
-2. Install the Extension
-```Bash
-gemini extensions install https://github.com/your-org/`atomic-sdlc`
-```
-3. Run an Atomic Audit
-```Bash
-gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile picture."
-```
+1.  **Install Gemini CLI:** Ensure your worker is authenticated.
+2.  **Install Extension:**
+    ```bash
+    gemini extensions install [https://github.com/your-org/atomic-sdlc](https://github.com/your-org/atomic-sdlc)
+    ```
+3.  **Run a Command:**
+    ```bash
+    gemini /atomic:blueprint ./docs/SPEC.md ./docs/ARCH.md
+    ```
+
+---
+
 ### 🛠️ The Atomic Skillset (Master Registry)
 
 | Command Name | Category | Description | Purpose | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **Discovery** | | | | |
-| `/atomic:elicit` | Discovery | Extracts core needs from raw stakeholder input. | Filters noise to find true business value. | ✅ |
-| `/atomic:constrain` | Discovery | Identifies NFRs (Security, Perf, Scalability). | Sets the technical boundaries for the system. | ✅ |
-| `/atomic:audit` | Discovery | Examines drafts for ambiguity and contradictions. | The "Gatekeeper" for requirement quality. | ✅ |
-| `/atomic:formalize` | Utility | Reconciles logs into a formal Specification. | Creates the "Source of Truth" artifact. | ✅ |
-| `/atomic:atomize` | Discovery | Slices the Specification into vertical User Stories. | Converts the "What" into actionable tasks. | ✅ |
-| `/atomic:criteria` | Discovery | Generates Gherkin Given/When/Then scenarios. | Defines the objective "Definition of Done." | ✅ |
+| `/atomic:elicit` | Discovery | Extracts core needs from raw input. | Filters noise for true value. | ✅ |
+| `/atomic:constrain`| Discovery | Identifies technical NFRs. | Sets the system boundaries. | ✅ |
+| `/atomic:audit` | Discovery | Examines drafts for ambiguity. | The Gatekeeper for quality. | ✅ |
+| `/atomic:formalize`| Utility | Reconciles logs into a Spec. | Creates the Source of Truth. | ✅ |
+| `/atomic:atomize` | Discovery | Slices Spec into User Stories. | Converts "What" into tasks. | ✅ |
+| `/atomic:criteria` | Discovery | Generates Gherkin scenarios. | Defines "Done" objectively. | ✅ |
 | **Design** | | | | |
-| `/atomic:blueprint` | Design | Architects high-level design and component manifest. | The "Master Plan" for the Design phase. | ✅ |
-| `/atomic:evaluate` | Design | Critiques the blueprint for over-engineering/risk. | Ensures the tech plan is sound and scalable. | ✅ |
-| `/atomic:schema` | Design | Generates database structures (SQL/NoSQL). | Builds the "Internal" data layer. | ✅ |
-| `/atomic:interface` | Design | Generates API contracts (OpenAPI/Swagger). | Builds the "External" communication layer. | ✅ |
-| `/atomic:layout` | Design | Generates structural UI wireframes/user flows. | Defines the user's interface and journey. | ✅ |
-| `/atomic:inspect` | Design | Performs heuristic usability audits on layouts. | Ensures the "Human" side of the design works. | ✅ |
+| `/atomic:blueprint` | Design | Architects high-level design. | The Master Plan for Design. | ✅ |
+| `/atomic:evaluate` | Design | Critiques blueprint for risk. | Prevents over-engineering. | ✅ |
+| `/atomic:schema` | Design | Generates DB structures. | Builds the data layer. | ✅ |
+| `/atomic:interface` | Design | Generates API contracts. | Builds the boundary layer. | ✅ |
+| `/atomic:layout` | Design | Generates UI wireframes. | Defines the user journey. | ✅ |
+| `/atomic:inspect` | Design | Performs UX usability audits. | Validates human interface. | ✅ |
 | **Implementation** | | | | |
-| `/atomic:author` | Implementation | Writes modular code based on design contracts. | Turns blueprints into functional logic. | ✅ |
-| `/atomic:refactor` | Implementation | Cleans up code smells, debt, and style alignment. | Ensures the code is "Clean" before the PR. | ✅ |
-| `/atomic:integrate` | Implementation | Checks for cross-module regressions and breaks. | Ensures the new unit fits the existing system. | ✅ |
-| `/atomic:review` | Implementation | Performs a code review for logic and security. | Acts as the "Quality Gate" for the codebase. | ✅ |
-| `/atomic:document` | Implementation | Writes "how/why" technical documentation. | Ensures the system is maintainable by humans. | ✅ |
-| `/atomic:verify` | Implementation | Audits documentation against the actual code logic. | Prevents "Stale Docs" from misleading devs. | ✅ |
+| `/atomic:author` | Implementation| Writes modular code. | Turns design into logic. | ✅ |
+| `/atomic:refactor` | Implementation| Cleans up code smells/debt. | Ensures "Clean" code. | ✅ |
+| `/atomic:integrate` | Implementation| Checks for module regressions. | Fits unit into the system. | ✅ |
+| `/atomic:review` | Implementation| Performs logic/security review. | Automated Peer Reviewer. | ✅ |
+| `/atomic:document` | Implementation| Writes tech documentation. | Ensures maintainability. | ✅ |
+| `/atomic:verify` | Implementation| Audits docs against code. | Prevents stale documentation. | ✅ |
 | **Verification** | | | | |
-| `/atomic:test` | Verification | Authors unit tests for individual logic paths. | Proves code correctness at the lowest level. | ✅ |
-| `/atomic:scrutinize` | Verification | Critiques test suites for coverage and weak logic. | Ensures the tests are actually effective. | ✅ |
-| `/atomic:probe` | Verification | Hunts for "unhappy paths" and stress-test data. | Prevents crashes from unexpected behavior. | ✅ |
-| `/atomic:profile` | Verification | Identifies performance/NFR bottlenecks in code. | Ensures latency and memory goals are met. | ✅ |
+| `/atomic:test` | Verification | Authors unit tests. | Proves code correctness. | ✅ |
+| `/atomic:scrutinize`| Verification | Critiques tests for gaps. | Ensures effective testing. | ✅ |
+| `/atomic:probe` | Verification | Hunts for "unhappy paths." | Stress-tests resilience. | ✅ |
+| `/atomic:profile` | Verification | Identifies NFR bottlenecks. | Ensures performance goals. | ✅ |
 | **Deployment** | | | | |
-| `/atomic:pipeline` | Deployment | Generates CI/CD scripts (GitHub Actions, etc.). | Automates the path from code to production. | ✅ |
-| `/atomic:harden` | Deployment | Scans configs/dependencies for security holes. | Prevents "Insecure-by-Default" deployments. | ✅ |
-| `/atomic:provision` | Deployment | Generates Infrastructure-as-Code (IaC/Terraform). | Ensures production matches dev environments. | ✅ |
+| `/atomic:pipeline` | Deployment | Generates CI/CD scripts. | Automates the ship path. | ✅ |
+| `/atomic:harden` | Deployment | Scans for security holes. | Prevents insecure deploys. | ✅ |
+| `/atomic:provision` | Deployment | Generates IaC (Terraform). | Matches prod to dev. | ✅ |
 | **Maintenance** | | | | |
-| `/atomic:telemetry` | Maintenance | Suggests instrumentation and logging points. | Provides visibility into live code health. | ✅ |
-| `/atomic:diagnose` | Maintenance | Analyzes error logs to find failure root causes. | Accelerates the fix for production bugs. | ✅ |
-| `/atomic:retrospect` | Maintenance | Critiques incident response for process fixes. | Facilitates the "Learning Loop" for the team. | ✅ |
+| `/atomic:telemetry` | Maintenance | Suggests monitoring points. | Visibility into live health. | ✅ |
+| `/atomic:diagnose` | Maintenance | Root-cause analysis of logs. | Accelerates bug fixing. | ✅ |
+| `/atomic:retrospect`| Maintenance | Critiques incident response. | Facilitates Learning Loop. | ✅ |
 | **Reporting** | | | | |
-| `/atomic:format-md` | Utility | Transforms JSON artifacts into human reports. | Makes machine data readable for people. | ✅ |
+| `/atomic:format-md` | Utility | Transforms JSON into Reports. | Makes machine data readable. | ✅ |
 
-### Deprecated
+### ⚠️ Deprecated
 | Command | Category | Responsibility |
 |---------|----------|----------------|
 | `/atomic:analyse` | Design | To review and expand existing requirements |
 | `/atomic:architect` | Design | To review requirements and system and propose the technical changes |
 
+---
+
 ## 📦 Extension Structure
 
-Each skill is isolated to prevent dependency rot:
-
-```Plaintext
+```text
 atomic-sdlc/
 ├── gemini-extension.json    # Manifest and versioning
 ├── commands/
-│   ├── audit.toml           # CLI argument definitions for /audit
-│   └── latency.toml         # CLI argument definitions for /latency
-├── prompts/
-│   ├── auditor.md           # The "Brain" (System Instructions)
-│   └── profiler.md          # The "Brain" (System Instructions)
-└── schemas/
-    ├── auditor_output.json  # Strict JSON validation contract
-    └── latency_output.json  # Strict JSON validation contract
-``` 
-
+│   └── [verb].toml          # CLI definitions & agent prompts
+```
 ## 🤝 Contributing
+This project thrives on Atomic Contributions. To add a skill:
 
-This project thrives on Atomic Contributions. If you want to add a skill:Define a Single Responsibility.Create a Markdown Prompt with a clear persona.Define a JSON Schema for the output.Submit a PR with the new .toml command.
+1.  Define a Single Responsibility.
+2.  Create a .toml command in /commands with a clear persona.
+3.  Ensure the prompt uses read_file and write_file.
+4.  Submit a PR; the /atomic:review agent will audit your contribution.
