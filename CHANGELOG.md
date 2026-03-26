@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.15](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.14...v0.2.15) (2026-03-26)
+
+
+### Features
+
+* added diagnose, retrospect and telemetry agents ([11a342b](https://github.com/boxheed/atomic-sdlc-extension/commit/11a342b6be3de2980c05743e0ac5b86e108c5b33))
+
 ### [0.2.14](https://github.com/boxheed/atomic-sdlc-extension/compare/v0.2.13...v0.2.14) (2026-03-26)
 
 

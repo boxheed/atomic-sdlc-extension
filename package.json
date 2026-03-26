@@ -1,6 +1,6 @@
 {
   "name": "atomic-sdlc",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
   "scripts": {
     "test": "echo \"Warning: no test available\" && exit 0",
