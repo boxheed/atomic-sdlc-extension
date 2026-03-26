@@ -50,8 +50,8 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:inspect` | Design | Performs heuristic usability audits on layouts. | Ensures the "Human" side of the design works. | ✅ |
 | **Implementation** | | | | |
 | `/atomic:author` | Implementation | Writes modular code based on design contracts. | Turns blueprints into functional logic. | ✅ |
-| `/atomic:refactor` | Implementation | Cleans up code smells, debt, and style alignment. | Ensures the code is "Clean" before the PR. | ❌ |
-| `/atomic:integrate` | Implementation | Checks for cross-module regressions and breaks. | Ensures the new unit fits the existing system. | ❌ |
+| `/atomic:refactor` | Implementation | Cleans up code smells, debt, and style alignment. | Ensures the code is "Clean" before the PR. | ✅ |
+| `/atomic:integrate` | Implementation | Checks for cross-module regressions and breaks. | Ensures the new unit fits the existing system. | ✅ |
 | `/atomic:review` | Implementation | Performs a code review for logic and security. | Acts as the "Quality Gate" for the codebase. | ✅ |
 | `/atomic:document` | Implementation | Writes "how/why" technical documentation. | Ensures the system is maintainable by humans. | ✅ |
 | `/atomic:verify` | Implementation | Audits documentation against the actual code logic. | Prevents "Stale Docs" from misleading devs. | ✅ |
