@@ -4,5 +4,3 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [x] **Track: Ensure all documentation is consistent**
-  *Link: [./tracks/doc_consistency_20260326/](./tracks/doc_consistency_20260326/)*
