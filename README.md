@@ -98,10 +98,11 @@ An `.ai-instructions.md` file is located in the root. When using a coding assist
 | `/atomic:format-md` | Utility | Transforms JSON into Reports. | Makes machine data readable. | ✅ |
 
 ### ⚠️ Deprecated
-| Command | Category | Responsibility |
-|---------|----------|----------------|
-| `/atomic:analyse` | Design | To review and expand existing requirements |
-| `/atomic:architect` | Design | To review requirements and system and propose the technical changes |
+
+| Command Name | Category | Description | Purpose | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| `/atomic:analyse` | Design | Reviews and expands existing requirements. | Replaced by `/atomic:elicit`. | ❌ |
+| `/atomic:architect` | Design | Proposes technical system changes. | Replaced by `/atomic:blueprint`. | ❌ |
 
 ---
 
