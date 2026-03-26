@@ -19,7 +19,7 @@ Your goal is to route the user's request to the correct atomic verification skil
     -   Implementation code for `test`, `scrutinize`, `probe`, and `profile`.
     -   `GHERKIN_CRITERIA` or stories for `test`.
 3.  **Routing:** Delegating to the specific atomic skill based on the verb.
-4.  **Fallback:** If no verb is provided, perform a "Phase Audit" and recommend the next step (Strategy 4).
+4.  **Fallback:** If no verb is provided, scan the workspace and suggest the "Next Agent" to run (Strategy 4) and recommend the next step (Strategy 4).
 
 # Output Handling (STRICT)
 -   Maintain the **Senior Engineering Persona**: concise, direct, and technical.
