@@ -61,8 +61,8 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | `/atomic:probe` | Verification | Hunts for "unhappy paths" and stress-test data. | Prevents crashes from unexpected behavior. | ✅ |
 | `/atomic:profile` | Verification | Identifies performance/NFR bottlenecks in code. | Ensures latency and memory goals are met. | ✅ |
 | **Deployment** | | | | |
-| `/atomic:pipeline` | Deployment | Generates CI/CD scripts (GitHub Actions, etc.). | Automates the path from code to production. | ❌ |
-| `/atomic:harden` | Deployment | Scans configs/dependencies for security holes. | Prevents "Insecure-by-Default" deployments. | ❌ |
+| `/atomic:pipeline` | Deployment | Generates CI/CD scripts (GitHub Actions, etc.). | Automates the path from code to production. | ✅ |
+| `/atomic:harden` | Deployment | Scans configs/dependencies for security holes. | Prevents "Insecure-by-Default" deployments. | ✅ |
 | `/atomic:provision` | Deployment | Generates Infrastructure-as-Code (IaC/Terraform). | Ensures production matches dev environments. | ❌ |
 | **Maintenance** | | | | |
 | `/atomic:telemetry` | Maintenance | Suggests instrumentation and logging points. | Provides visibility into live code health. | ❌ |
