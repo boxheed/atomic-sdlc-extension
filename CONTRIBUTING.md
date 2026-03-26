@@ -55,15 +55,12 @@ prompt = """
 ```
 
 ## 5. Maintenance Checklist for AI Editors
-When tasked with updating an agent:
+When tasked with updating an agent, you MUST:
 
-Check Regressions: Does the change in output format break the "Handshake" for the next agent in the Registry?
-
-Verify Tool Usage: Ensure the agent is using read_file for all context and write_file for all results.
-
-JSON Schema Integrity: If the agent outputs JSON, ensure the keys remain consistent with the Master Registry definitions.
-
-Tone Alignment: Maintain the "Senior Peer" persona—concise, direct, and technically rigorous.
+1.  **Check Regressions:** Does the change in output format break the "Handshake" for the next agent in the Registry?
+2.  **Verify Tool Usage:** Ensure the agent is using `read_file` for all context and `write_file` for all results.
+3.  **JSON Schema Integrity:** If the agent outputs JSON, ensure the keys remain consistent with the Master Registry definitions.
+4.  **Tone Alignment:** Maintain the "Senior Peer" persona—concise, direct, and technically rigorous.
 
 ## 6 . Current Master Registry
 This is documented in the README.md file
