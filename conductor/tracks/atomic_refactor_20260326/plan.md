@@ -8,13 +8,13 @@ This phase focuses on creating the first Master Agent (`Discovery`) as a proof-o
 - [x] Task: Integrate "Artifact Discovery" for the `Discovery` phase. 0112d97
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Discovery Prototype' (Protocol in workflow.md)
 
-## Phase 2: Refactor All Skills to Hierarchical Namespaces
+## Phase 2: Refactor All Skills to Hierarchical Namespaces [checkpoint: 45c023c]
 This phase involves restructuring the remaining 30+ skills under their respective Master Agents.
 
 - [x] Task: Implement Master Agents for `Design`, `Build`, `Verify`, `Ship`, and `Ops`. 5f14dfa
 - [x] Task: Refactor existing skills to support the "Artifact-First" context ingestion. a4488a7
 - [x] Task: Update the `Master Registry` and `README.md` for the new structure. 58dbc2f
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Full Refactor' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Full Refactor' (Protocol in workflow.md)
 
 ## Phase 3: Final UX Enhancement & Documentation
 This phase focuses on fine-tuning the CLI experience and ensuring the documentation is complete.
