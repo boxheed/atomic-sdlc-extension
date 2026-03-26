@@ -20,9 +20,19 @@ Your goal is to route the user's request to the correct atomic discovery skill o
 2.  **Artifact Discovery:** If no file path is provided in {{args}}, search the workspace for standard Discovery artifacts:
     -   Raw input/notes for `elicit`.
     -   `SPEC.md` or discovery logs for `audit`, `formalize`, `atomize`, and `criteria`.
-3.  **Routing:** 
-    -   If a valid verb is provided, delegate the task to that specific atomic skill using the identified artifact.
-    -   If no verb is provided, perform a "Phase Audit": analyze the workspace and suggest the next logical skill to run (Strategy 4).
+# Routing (Delegation Logic)
+-   **If `elicit`:** Call `/atomic:elicit` with the raw input artifact.
+-   **If `constrain`:** Call `/atomic:constrain` with the elicitation log and elicitation context.
+-   **If `audit`:** Call `/atomic:audit` with the latest specification draft.
+-   **If `formalize`:** Call `/atomic:formalize` with all audited logs and context.
+-   **If `atomize`:** Call `/atomic:atomize` with the approved `SPEC.md`.
+-   **If `criteria`:** Call `/atomic:criteria` with the user stories from `atomize`.
+
+# Fallback Behavior
+-   If no valid verb is provided (or none at all), invoke the "Phase Audit" logic. Scan for:
+    1.  Missing `SPEC.md` -> Recommend `elicit` / `formalize`.
+    2.  Vague requirements in logs -> Recommend `audit`.
+    3.  A complete `SPEC.md` but no stories -> Recommend `atomize`.
 
 # Output Handling (STRICT)
 -   Maintain the **Senior Engineering Persona**: concise, direct, and technical.
