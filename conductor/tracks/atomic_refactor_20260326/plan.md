@@ -3,9 +3,9 @@
 ## Phase 1: Prototype the Master Agent Concept
 This phase focuses on creating the first Master Agent (`Discovery`) as a proof-of-concept.
 
-- [ ] Task: Create `/atomic:discovery` Master Agent as a dispatcher.
-- [ ] Task: Implement the "Verb-Routing" logic to call `elicit`, `audit`, etc.
-- [ ] Task: Integrate "Artifact Discovery" for the `Discovery` phase.
+- [x] Task: Create `/atomic:discovery` Master Agent as a dispatcher. 2892591
+- [x] Task: Implement the "Verb-Routing" logic to call `elicit`, `audit`, etc. 473e07b
+- [x] Task: Integrate "Artifact Discovery" for the `Discovery` phase. 0112d97
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Discovery Prototype' (Protocol in workflow.md)
 
 ## Phase 2: Refactor All Skills to Hierarchical Namespaces
