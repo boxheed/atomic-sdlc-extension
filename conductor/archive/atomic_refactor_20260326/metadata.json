@@ -1,0 +1,8 @@
+{
+  "track_id": "atomic_refactor_20260326",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-03-26T14:00:00Z",
+  "updated_at": "2026-03-26T14:00:00Z",
+  "description": "Refactor atomic-sdlc to Phase-Based Namespacing and Artifact Discovery"
+}
