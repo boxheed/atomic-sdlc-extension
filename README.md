@@ -63,11 +63,11 @@ gemini /atomic:audit --requirement "Users should be able to upload a 2MB profile
 | **Deployment** | | | | |
 | `/atomic:pipeline` | Deployment | Generates CI/CD scripts (GitHub Actions, etc.). | Automates the path from code to production. | ✅ |
 | `/atomic:harden` | Deployment | Scans configs/dependencies for security holes. | Prevents "Insecure-by-Default" deployments. | ✅ |
-| `/atomic:provision` | Deployment | Generates Infrastructure-as-Code (IaC/Terraform). | Ensures production matches dev environments. | ❌ |
+| `/atomic:provision` | Deployment | Generates Infrastructure-as-Code (IaC/Terraform). | Ensures production matches dev environments. | ✅ |
 | **Maintenance** | | | | |
-| `/atomic:telemetry` | Maintenance | Suggests instrumentation and logging points. | Provides visibility into live code health. | ❌ |
-| `/atomic:diagnose` | Maintenance | Analyzes error logs to find failure root causes. | Accelerates the fix for production bugs. | ❌ |
-| `/atomic:retrospect` | Maintenance | Critiques incident response for process fixes. | Facilitates the "Learning Loop" for the team. | ❌ |
+| `/atomic:telemetry` | Maintenance | Suggests instrumentation and logging points. | Provides visibility into live code health. | ✅ |
+| `/atomic:diagnose` | Maintenance | Analyzes error logs to find failure root causes. | Accelerates the fix for production bugs. | ✅ |
+| `/atomic:retrospect` | Maintenance | Critiques incident response for process fixes. | Facilitates the "Learning Loop" for the team. | ✅ |
 | **Reporting** | | | | |
 | `/atomic:format-md` | Utility | Transforms JSON artifacts into human reports. | Makes machine data readable for people. | ✅ |
 
