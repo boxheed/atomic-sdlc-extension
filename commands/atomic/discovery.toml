@@ -17,9 +17,12 @@ Your goal is to route the user's request to the correct atomic discovery skill o
 
 # Process
 1.  **Identify Intent:** Parse the first argument from {{args}} to determine which atomic skill is being requested.
-2.  **Artifact Discovery:** If no file path is provided in {{args}}, search the workspace for standard Discovery artifacts:
-    -   Raw input/notes for `elicit`.
-    -   `SPEC.md` or discovery logs for `audit`, `formalize`, `atomize`, and `criteria`.
+# Artifact Discovery (Strategy 3)
+If no path is provided in {{args}}, you MUST use the `list_directory` tool to search for:
+-   **For `elicit`:** Look for `notes.md`, `requirements.txt`, or any `.md` file in `discovery/`.
+-   **For `formalize`/`audit`:** Look for `discovery_log.json` or `SPEC_DRAFT.md`.
+-   **For `atomize`/`criteria`:** Look for `SPEC.md` in the project root or `./docs/`.
+-   **If multiple files match:** Use the one with the most recent modification time.
 # Routing (Delegation Logic)
 -   **If `elicit`:** Call `/atomic:elicit` with the raw input artifact.
 -   **If `constrain`:** Call `/atomic:constrain` with the elicitation log and elicitation context.
