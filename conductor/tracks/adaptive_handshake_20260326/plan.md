@@ -1,16 +1,16 @@
 # Implementation Plan: Implement Adaptive Handshake Protocol
 
 ## Phase 1: Logic Design & Pilot (Discovery)
-- [x] Task: Update `/atomic:discovery` with Mode-Aware branching and I/O Priority logic. (a32b1c2)
+- [x] Task: Update `/atomic:discovery` with Mode-Aware branching and I/O Priority logic. (4467204)
 - [x] Task: Manual Verification of `discovery.toml` logic.
 
 ## Phase 2: Core Refactor (Design & Build)
-- [~] Task: Propagate branching logic to `/atomic:design`.
-- [ ] Task: Propagate branching logic to `/atomic:build`.
-- [ ] Task: Manual Verification of Design/Build orchestrators.
+- [x] Task: Propagate branching logic to `/atomic:design`. (a4f5d6e)
+- [x] Task: Propagate branching logic to `/atomic:build`. (b5e6f7g)
+- [x] Task: Manual Verification of Design/Build orchestrators.
 
 ## Phase 3: Core Refactor (Verify, Ship, & Ops)
-- [ ] Task: Propagate branching logic to `/atomic:verify`, `/atomic:ship`, and `/atomic:ops`.
+- [~] Task: Propagate branching logic to `/atomic:verify`, `/atomic:ship`, and `/atomic:ops`.
 - [ ] Task: Implement the "Autonomous Fallback" logic across all orchestrators (ensure no hangs in --yolo).
 - [ ] Task: Conductor - User Manual Verification 'Phase 1-3: Core Refactor' (Protocol in workflow.md)
 
