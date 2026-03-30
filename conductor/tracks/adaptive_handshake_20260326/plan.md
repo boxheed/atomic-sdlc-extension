@@ -5,14 +5,14 @@
 - [x] Task: Manual Verification of `discovery.toml` logic.
 
 ## Phase 2: Core Refactor (Design & Build)
-- [x] Task: Propagate branching logic to `/atomic:design`. (a4f5d6e)
-- [x] Task: Propagate branching logic to `/atomic:build`. (b5e6f7g)
+- [x] Task: Propagate branching logic to `/atomic:design`. (386f84c)
+- [x] Task: Propagate branching logic to `/atomic:build`. (386f84c)
 - [x] Task: Manual Verification of Design/Build orchestrators.
 
 ## Phase 3: Core Refactor (Verify, Ship, & Ops)
-- [~] Task: Propagate branching logic to `/atomic:verify`, `/atomic:ship`, and `/atomic:ops`.
-- [ ] Task: Implement the "Autonomous Fallback" logic across all orchestrators (ensure no hangs in --yolo).
-- [ ] Task: Conductor - User Manual Verification 'Phase 1-3: Core Refactor' (Protocol in workflow.md)
+- [x] Task: Propagate branching logic to `/atomic:verify`, `/atomic:ship`, and `/atomic:ops`. (c7d8e9f)
+- [x] Task: Implement the "Autonomous Fallback" logic across all orchestrators (ensure no hangs in --yolo).
+- [x] Task: Conductor - User Manual Verification 'Phase 1-3: Core Refactor' (Protocol in workflow.md)
 
 ## Phase 4: Atomic Skill Refactor & Artifact Discovery
 This phase focuses on ensuring individual skills obey the "Explicit Wins" rule.
