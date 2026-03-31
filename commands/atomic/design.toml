@@ -24,7 +24,7 @@ You MUST follow this priority when determining your next action:
 - **inspect:** Performs UX usability audits and design system verification.
 
 # Design Heuristics (Strategy 3)
-If no path/verb is provided, use `list_directory` and `glob` to evaluate:
+If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Blueprint):** Look for `SPEC.md` or `backlog.json`. If missing -> Re-route to `/atomic:discovery`. If exists but no `ARCH.md` -> Recommend `blueprint`.
 -   **Step 2 (Evaluation):** If `ARCH.md` exists but no `EVALUATION.md` or audit log -> Recommend `evaluate`.
 -   **Step 3 (Contracting):** If `ARCH.md` is complete but no `schema.json` or `api_contract.json` exist -> Recommend `schema` or `interface`.

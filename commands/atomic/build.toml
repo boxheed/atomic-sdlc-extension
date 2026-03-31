@@ -24,7 +24,7 @@ You MUST follow this priority when determining your next action:
 - **verify:** Audits documentation completeness against implementation.
 
 # Build Heuristics (Strategy 3)
-If no path/verb is provided, use `list_directory` and `glob` to evaluate:
+If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Authoring):** Look for `ARCH.md` or `backlog.json`. If missing -> Re-route to `/atomic:design`. If exists but no implementation code -> Recommend `author`.
 -   **Step 2 (Review):** If implementation exists but no `REVIEW.md` or audit record -> Recommend `review`.
 -   **Step 3 (Documentation):** If implementation is reviewed but lacks technical documentation (e.g., no `docs/` or `README.md` updates) -> Recommend `document`.

@@ -21,7 +21,7 @@ You MUST follow this priority when determining your next action:
 - **retrospect:** Critiques incident response and generates post-mortem reports for learning.
 
 # Ops Heuristics (Strategy 3)
-If no path/verb is provided, use `list_directory` and `glob` to evaluate:
+If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Telemetry):** Look for implementation code and architectural design. If missing -> Re-route to `/atomic:ship`. If exists but no monitoring/logging configuration (e.g., no `prometheus.yml`, `loki-config.yaml`) found -> Recommend `telemetry`.
 -   **Step 2 (Diagnosis):** If active error logs or incident reports exist (e.g., in `logs/` or `incidents/`) but no diagnostic report or RCA exists -> Recommend `diagnose`.
 -   **Step 3 (Retrospective):** If incidents are resolved but no retrospective or post-mortem artifact (e.g., `POST_MORTEM.md`) exists -> Recommend `retrospect`.

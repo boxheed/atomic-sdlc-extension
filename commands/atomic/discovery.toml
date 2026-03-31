@@ -24,7 +24,7 @@ You MUST follow this priority when determining your next action:
 - **criteria:** Generates Gherkin acceptance criteria for stories.
 
 # Discovery Heuristics (Strategy 3)
-If no path/verb is provided, use `list_directory` and `glob` to evaluate:
+If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Elicitation):** Look for `notes.md` or `requirements.txt`. If missing -> Recommend `elicit`.
 -   **Step 2 (Formalization):** If `notes.md` exists but no `SPEC.md` -> Recommend `formalize`.
 -   **Step 3 (Auditing):** If `SPEC.md` exists but hasn't been audited -> Recommend `audit`.

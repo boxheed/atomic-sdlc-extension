@@ -22,7 +22,7 @@ You MUST follow this priority when determining your next action:
 - **profile:** Identifies performance bottlenecks and resource leaks.
 
 # Verification Heuristics (Strategy 3)
-If no path/verb is provided, use `list_directory` and `glob` to evaluate:
+If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Testing):** Look for implementation code and Gherkin criteria. If missing -> Re-route to `/atomic:build`. If exists but no test files found -> Recommend `test`.
 -   **Step 2 (Scrutiny):** If tests exist but no coverage report or gap audit exists -> Recommend `scrutinize`.
 -   **Step 3 (Probing):** If primary tests pass but no specialized edge-case tests (e.g., fuzzing or negative tests) exist -> Recommend `probe`.

@@ -21,7 +21,7 @@ You MUST follow this priority when determining your next action:
 - **provision:** Generates Infrastructure-as-Code (IaC) templates and provisioning scripts.
 
 # Ship Heuristics (Strategy 3)
-If no path/verb is provided, use `list_directory` and `glob` to evaluate:
+If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Pipeline):** Look for implementation code and architectural design. If missing -> Re-route to `/atomic:build`. If exists but no CI/CD configuration (e.g., no `.github/workflows` or `Jenkinsfile`) found -> Recommend `pipeline`.
 -   **Step 2 (Provisioning):** If architectural design includes infrastructure components but no IaC (e.g., no `*.tf` or `*.yaml` for CloudFormation) exists -> Recommend `provision`.
 -   **Step 3 (Hardening):** If pipeline and provisioning exist but no security audit or hardening report exists -> Recommend `harden`.
