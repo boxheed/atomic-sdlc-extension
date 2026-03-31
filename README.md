@@ -14,6 +14,7 @@ Most AI implementations fail due to "context drift." `atomic-sdlc` eliminates th
 2.  **Stateless Handshakes:** Communication happens via file artifacts (`SPEC.md`, `ARCH.md`, `.json`), ensuring no reliance on conversation history.
 3.  **Halt-on-Failure:** Quality gates (Auditors/Critics) must output an explicit `PASS` or `FAIL` status to control the pipeline flow.
 4.  **Contract-Bound:** All machine-to-machine outputs follow a minified JSON schema for deterministic parsing.
+5.  **Mode-Aware Autonomy:** Agents adapt to their environment (Interactive vs. YOLO) using a strict **I/O Priority Ladder** (Explicit Args > Inferred Discovery > Interactive Fallback).
 
 ---
 

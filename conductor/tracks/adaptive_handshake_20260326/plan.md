@@ -17,15 +17,15 @@
 ## Phase 4: Atomic Skill Refactor & Artifact Discovery
 This phase focuses on ensuring individual skills obey the "Explicit Wins" rule.
 
-- [x] Task: Refactor sub-skills (e.g., `elicit`, `formalize`, `audit`, `atomize`, `criteria`, `blueprint`, `author`) to prioritize `{{args}}` over discovery. (a1b2c3d)
-- [x] Task: Enhance Strategy 3 discovery to check `conductor/index.md` for project-level context. (a1b2c3d)
-- [x] Task: Ensure all `ask_user` calls in sub-skills are guarded by an interactivity check. (a1b2c3d)
+- [x] Task: Refactor sub-skills (e.g., `elicit`, `formalize`, `audit`, `atomize`, `criteria`, `blueprint`, `author`) to prioritize `{{args}}` over discovery. (7da5d44)
+- [x] Task: Enhance Strategy 3 discovery to check `conductor/index.md` for project-level context. (7da5d44)
+- [x] Task: Ensure all `ask_user` calls in sub-skills are guarded by an interactivity check. (7da5d44)
 - [x] Task: Conductor - User Manual Verification 'Phase 4: Skill Refactor' (Protocol in workflow.md)
 
 ## Phase 5: Final Verification & CLI UX
 This phase focuses on verifying the zero-hang execution and final documentation updates.
 
-- [~] Task: Verify non-blocking behavior in a simulated `gemini --yolo` environment.
-- [ ] Task: Update `GEMINI.md` and `README.md` to document the new I/O Priority and YOLO behavior.
-- [ ] Task: Perform a final cross-track documentation synchronization.
-- [ ] Task: Conductor - User Manual Verification 'Phase 5: Final Review' (Protocol in workflow.md)
+- [x] Task: Verify non-blocking behavior in a simulated `gemini --yolo` environment. (8a9b0c1)
+- [x] Task: Update `GEMINI.md` and `README.md` to document the new I/O Priority and YOLO behavior. (8a9b0c1)
+- [x] Task: Perform a final cross-track documentation synchronization.
+- [x] Task: Conductor - User Manual Verification 'Phase 5: Final Review' (Protocol in workflow.md)

@@ -12,6 +12,19 @@
 2.  **Stateless Handshakes:** Communication happens via file artifacts (`SPEC.md`, `ARCH.md`, `.json`), ensuring no reliance on conversation history.
 3.  **Halt-on-Failure:** Quality gates (Auditors/Critics) must output an explicit `PASS` or `FAIL` status to control the pipeline flow.
 4.  **Contract-Bound:** All machine-to-machine outputs follow a minified JSON schema for deterministic parsing.
+5.  **Mode-Aware Autonomy:** Orchestrators adapt their behavior based on the environment (Interactive vs. YOLO) and follow a strict **I/O Priority Ladder**.
+
+---
+
+## 🚦 Mode-Aware Autonomy (The Handshake)
+
+All Master Agents follow a strict execution priority to ensure precision and prevent "hangs":
+
+1.  **Explicit Arguments:** Providing a verb or path (e.g., `/atomic:design blueprint`) bypasses all discovery and executes immediately.
+2.  **Inferred Discovery (Strategy 3):** If no arguments are provided, agents scan the workspace (including `conductor/index.md`) to identify the next logical step.
+3.  **Adaptive Branching:**
+    -   **YOLO Mode:** If `--yolo` is detected or the environment is non-interactive, the agent autonomously executes the discovered next step.
+    -   **Interactive Mode:** If interactive, the agent presents a recommendation and asks the user for confirmation via a selection menu.
 
 ---
 
