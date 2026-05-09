@@ -1,6 +1,6 @@
 # 📂 `atomic-sdlc`
 
-**High-precision collection of single-responsibility AI agent skills for the SDLC.**
+**High-precision collection of single-responsibility AI agent Commands for the SDLC.**
 
 `atomic-sdlc` eliminates "context drift" by treating every agent as a **Pure Function** with strict, machine-readable handshakes.
 
