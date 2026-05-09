@@ -11,7 +11,7 @@ Move discovery sub-skills to nested directory and update the Master Agent.
 ## Phase 2: Design Phase Migration
 Move design sub-skills to nested directory and update the Master Agent.
 
-- [ ] Task: Create `commands/atomic/design/` directory.
+- [x] Task: Create `commands/atomic/design/` directory. 84b9c13
 - [ ] Task: Move `blueprint`, `evaluate`, `schema`, `interface`, `layout`, and `inspect` to the new directory.
 - [ ] Task: Update `commands/atomic/design.toml` to call nested paths.
 - [ ] Task: Verify Design phase orchestration.
