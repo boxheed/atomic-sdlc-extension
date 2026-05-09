@@ -8,7 +8,7 @@ Move discovery sub-skills to nested directory and update the Master Agent.
 - [x] Task: Update `commands/atomic/discovery.toml` to call the nested `/atomic:discovery:[verb]` paths. b37c1d3
 - [x] Task: Verify `/atomic:discovery` and direct access to `/atomic:discovery:elicit`. b37c1d3
 
-## Phase 2: Design Phase Migration
+## Phase 2: Design Phase Migration [checkpoint: b0552bc]
 Move design sub-skills to nested directory and update the Master Agent.
 
 - [x] Task: Create `commands/atomic/design/` directory. 84b9c13
