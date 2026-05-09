@@ -13,7 +13,7 @@ This phase ensures that the project's documentation matches its implementation.
 - [x] Task: Audit and update `GEMINI.md` for stale `skills/` references. 7f55ca4
 - [x] Task: Audit and update `CONTRIBUTING.md` for stale `skills/` references. 35add47
 
-## Phase 3: Final Verification
+## Phase 3: Final Verification [checkpoint: 10df5af]
 Final check of the project's health.
 
 - [x] Task: Run `npm run check` to ensure no other regression or linting issues. 16e8220
