@@ -11,10 +11,12 @@
 - **Git:** Source control for managing the evolution of the codebase and its skills.
 
 ## Architecture & Protocols
-- **Atomic Skill Architecture:** A modular system of single-responsibility, stateless agents.
+- **Atomic Command Architecture:** A modular system of single-responsibility, stateless agents.
+- **Adaptive Handshake Protocol:** Implements an I/O Priority Ladder (Explicit Args > Inferred Discovery > Interactive Fallback) to ensure precision and autonomy.
+- **Mode-Aware Branching:** Dynamic behavior adjustment between interactive and non-interactive (YOLO) environments.
 - **Deterministic Handshakes:** Contract-bound interactions using minified JSON schemas to ensure reliable data transfer between skills.
 - **Markdown-First Reporting:** Using structured Markdown for all human-readable outputs and project documentation.
-- **State Management:** All skills must be stateless, with required context provided through discrete file artifacts.
+- **State Management:** All commands must be stateless, with required context provided through discrete file artifacts.
 
 ## Quality Gates
 - **Contract Verification:** Ensuring all tool outputs match the defined JSON schemas.

@@ -26,6 +26,7 @@ The suite covers the full SDLC spectrum:
 - **Maintenance:** Telemetry, root-cause diagnosis, and retrospective analysis.
 
 ## Workflow & Integration
+- **Mode-Aware Autonomy:** Features an adaptive handshake protocol that switches between interactive guidance and autonomous execution based on the environment (YOLO mode).
 - **CLI-First:** Optimized for terminal usage, allowing for powerful command piping.
 - **CI/CD Integration:** Designed to run within automated build and release pipelines (e.g., GitHub Actions).
 - **IDE-Ready:** Seamlessly integrated into development environments like VS Code and Cursor via the Gemini CLI extension.
