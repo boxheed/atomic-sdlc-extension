@@ -4,10 +4,13 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Implement Adaptive Handshake Protocol for Mode-Aware Autonomy**
+- [x] **Track: Implement Adaptive Handshake Protocol for Mode-Aware Autonomy**
   *Link: [./tracks/adaptive_handshake_20260326/](./tracks/adaptive_handshake_20260326/)*
 
 - [x] **Track: Package Coherence Audit & Cleanup**
   *Link: [./tracks/package_coherence_audit_20260509/](./tracks/package_coherence_audit_20260509/)*
+
+- [ ] **Track: Hierarchical Master & Workers Refactor**
+  *Link: [./tracks/hierarchical_refactor_20260509/](./tracks/hierarchical_refactor_20260509/)*
 
 
