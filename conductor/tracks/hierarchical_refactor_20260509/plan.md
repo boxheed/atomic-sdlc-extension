@@ -28,7 +28,7 @@ Move build sub-skills and resolve the `verify` naming collision.
 ## Phase 4: Verify, Ship, & Ops Phase Migration
 Finalize the restructuring for the remaining phases.
 
-- [ ] Task: Create subdirectories for `verify`, `ship`, and `ops`.
+- [x] Task: Create subdirectories for `verify`, `ship`, and `ops`. 99d8aab
 - [ ] Task: Move remaining sub-skills to their respective nested directories.
 - [ ] Task: Update Master Agents (`verify.toml`, `ship.toml`, `ops.toml`) to call nested paths.
 - [ ] Task: Move `format-md.toml` to a `utility/` or appropriate subdirectory.
