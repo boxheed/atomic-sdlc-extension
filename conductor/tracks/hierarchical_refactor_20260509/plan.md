@@ -16,7 +16,7 @@ Move design sub-skills to nested directory and update the Master Agent.
 - [x] Task: Update `commands/atomic/design.toml` to call nested paths. 3467aeb
 - [x] Task: Verify Design phase orchestration. 3467aeb
 
-## Phase 3: Build Phase Migration & Verify Resolution
+## Phase 3: Build Phase Migration & Verify Resolution [checkpoint: 264abc4]
 Move build sub-skills and resolve the `verify` naming collision.
 
 - [x] Task: Create `commands/atomic/build/` directory. 07fba22
