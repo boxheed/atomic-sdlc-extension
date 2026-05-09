@@ -19,7 +19,7 @@ Move design sub-skills to nested directory and update the Master Agent.
 ## Phase 3: Build Phase Migration & Verify Resolution
 Move build sub-skills and resolve the `verify` naming collision.
 
-- [ ] Task: Create `commands/atomic/build/` directory.
+- [x] Task: Create `commands/atomic/build/` directory. 07fba22
 - [ ] Task: Move `author`, `refactor`, `integrate`, `review`, and `document` to the new directory.
 - [ ] Task: Create `commands/atomic/build/validate.toml` (renamed from the build-level `verify` logic).
 - [ ] Task: Update `commands/atomic/build.toml` to call nested paths and use the new `validate` verb.
