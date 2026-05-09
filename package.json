@@ -6,7 +6,7 @@
     "test": "echo \"Warning: no test available\" && exit 0",
     "check": "npm test",
     "release": "standard-version",
-    "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ skills/ README.md"
+    "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ README.md"
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
