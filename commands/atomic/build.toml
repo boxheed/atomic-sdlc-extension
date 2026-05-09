@@ -21,16 +21,17 @@ You MUST follow this priority when determining your next action:
 - **integrate:** Merges modules and ensures system-wide compatibility.
 - **review:** Performs technical, logic, and security reviews of implementation.
 - **document:** Generates technical documentation and API references.
-- **verify:** Audits documentation completeness against implementation.
+- **validate:** Audits documentation completeness against implementation.
 
 # Build Heuristics (Strategy 3)
 If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Authoring):** Look for `ARCH.md` or `backlog.json`. If missing -> Re-route to `/atomic:design`. If exists but no implementation code -> Recommend `author`.
 -   **Step 2 (Review):** If implementation exists but no `REVIEW.md` or audit record -> Recommend `review`.
 -   **Step 3 (Documentation):** If implementation is reviewed but lacks technical documentation (e.g., no `docs/` or `README.md` updates) -> Recommend `document`.
+-   **Step 4 (Validation):** If documentation exists but has not been audited against implementation -> Recommend `validate`.
 
 # Execution & Routing
--   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:author <path>`).
+-   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:build:author <path>`).
 -   **Interactive Menu:** If no intent is confirmed, use `ask_user` with the following:
     - **header:** "Build"
     - **question:** "I've identified the project is at [current state]. The recommended next step is [skill]. How would you like to proceed?"
