@@ -5,7 +5,7 @@ Move discovery sub-skills to nested directory and update the Master Agent.
 
 - [x] Task: Create `commands/atomic/discovery/` directory. eb7fa2e
 - [x] Task: Move `elicit`, `constrain`, `audit`, `formalize`, `atomize`, and `criteria` to the new directory. 919f5e2
-- [ ] Task: Update `commands/atomic/discovery.toml` to call the nested `/atomic:discovery:[verb]` paths.
+- [x] Task: Update `commands/atomic/discovery.toml` to call the nested `/atomic:discovery:[verb]` paths. b37c1d3
 - [ ] Task: Verify `/atomic:discovery` and direct access to `/atomic:discovery:elicit`.
 
 ## Phase 2: Design Phase Migration
