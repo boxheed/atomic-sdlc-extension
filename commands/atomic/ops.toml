@@ -27,7 +27,7 @@ If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Alwa
 -   **Step 3 (Retrospective):** If incidents are resolved but no retrospective or post-mortem artifact (e.g., `POST_MORTEM.md`) exists -> Recommend `retrospect`.
 
 # Execution & Routing
--   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:telemetry <path>`).
+-   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:ops:telemetry <path>`).
 -   **Interactive Menu:** If no intent is confirmed, use `ask_user` with the following:
     - **header:** "Ops"
     - **question:** "I've identified the project is at [current state]. The recommended next step is [skill]. How would you like to proceed?"

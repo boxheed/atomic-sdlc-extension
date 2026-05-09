@@ -27,7 +27,7 @@ If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Alwa
 -   **Step 3 (Hardening):** If pipeline and provisioning exist but no security audit or hardening report exists -> Recommend `harden`.
 
 # Execution & Routing
--   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:pipeline <path>`).
+-   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:ship:pipeline <path>`).
 -   **Interactive Menu:** If no intent is confirmed, use `ask_user` with the following:
     - **header:** "Ship"
     - **question:** "I've identified the project is at [current state]. The recommended next step is [skill]. How would you like to proceed?"
