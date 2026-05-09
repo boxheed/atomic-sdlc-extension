@@ -36,6 +36,6 @@ Finalize the restructuring for the remaining phases.
 ## Phase 5: Documentation & Registry Alignment
 Ensure the project state matches the new architecture.
 
-- [ ] Task: Update `README.md` Master Registry with the hierarchical command names.
-- [ ] Task: Update `GEMINI.md` and `CONTRIBUTING.md` with new path examples.
-- [ ] Task: Perform a final `npm run check` and `npm run package`.
+- [x] Task: Update `README.md` Master Registry with the hierarchical command names. 70d5d5b
+- [x] Task: Update `GEMINI.md` and `CONTRIBUTING.md` with new path examples. 70d5d5b
+- [x] Task: Perform a final `npm run check` and `npm run package`. 70d5d5b
