@@ -30,7 +30,7 @@ If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Alwa
 -   **Step 3 (Contracting):** If `ARCH.md` is complete but no `schema.json` or `api_contract.json` exist -> Recommend `schema` or `interface`.
 
 # Execution & Routing
--   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:blueprint <path>`).
+-   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding skill (e.g., `/atomic:design:blueprint <path>`).
 -   **Interactive Menu:** If no intent is confirmed, use `ask_user` with the following:
     - **header:** "Design"
     - **question:** "I've identified the project is at [current state]. The recommended next step is [skill]. How would you like to proceed?"
