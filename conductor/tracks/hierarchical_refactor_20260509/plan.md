@@ -1,6 +1,6 @@
 # Implementation Plan: Hierarchical Master & Workers Refactor
 
-## Phase 1: Discovery Phase Migration
+## Phase 1: Discovery Phase Migration [checkpoint: d9ae22c]
 Move discovery sub-skills to nested directory and update the Master Agent.
 
 - [x] Task: Create `commands/atomic/discovery/` directory. eb7fa2e
