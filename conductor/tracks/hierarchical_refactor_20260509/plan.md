@@ -30,7 +30,7 @@ Finalize the restructuring for the remaining phases.
 
 - [x] Task: Create subdirectories for `verify`, `ship`, and `ops`. 99d8aab
 - [x] Task: Move remaining sub-skills to their respective nested directories. dfe8ba6
-- [ ] Task: Update Master Agents (`verify.toml`, `ship.toml`, `ops.toml`) to call nested paths.
+- [x] Task: Update Master Agents (`verify.toml`, `ship.toml`, `ops.toml`) to call nested paths. 3487032
 - [ ] Task: Move `format-md.toml` to a `utility/` or appropriate subdirectory.
 
 ## Phase 5: Documentation & Registry Alignment
