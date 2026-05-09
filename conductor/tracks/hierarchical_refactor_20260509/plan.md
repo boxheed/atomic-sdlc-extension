@@ -25,7 +25,7 @@ Move build sub-skills and resolve the `verify` naming collision.
 - [x] Task: Update `commands/atomic/build.toml` to call nested paths and use the new `validate` verb. 2da45e4
 - [x] Task: Verify Build phase orchestration and the resolution of the `verify` collision. 2da45e4
 
-## Phase 4: Verify, Ship, & Ops Phase Migration
+## Phase 4: Verify, Ship, & Ops Phase Migration [checkpoint: b487652]
 Finalize the restructuring for the remaining phases.
 
 - [x] Task: Create subdirectories for `verify`, `ship`, and `ops`. 99d8aab
