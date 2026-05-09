@@ -11,7 +11,7 @@
 - **Git:** Source control for managing the evolution of the codebase and its skills.
 
 ## Architecture & Protocols
-- **Atomic Command Architecture:** A modular system of single-responsibility, stateless agents.
+- **Hierarchical Atomic Command Architecture:** A modular system of Master Agent orchestrators and namespaced worker commands.
 - **Adaptive Handshake Protocol:** Implements an I/O Priority Ladder (Explicit Args > Inferred Discovery > Interactive Fallback) to ensure precision and autonomy.
 - **Mode-Aware Branching:** Dynamic behavior adjustment between interactive and non-interactive (YOLO) environments.
 - **Deterministic Handshakes:** Contract-bound interactions using minified JSON schemas to ensure reliable data transfer between skills.
