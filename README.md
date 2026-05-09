@@ -2,7 +2,7 @@
 
 **The 2026 Modular Suite of Gemini CLI Extensions for the Software Development Lifecycle.**
 
-`atomic-sdlc` is a high-precision collection of single-responsibility AI agent skills. Unlike "monolithic" AI assistants, these skills are **Atomic**: they function as pure technical units that perform one specific transformation (e.g., auditing a requirement, generating a schema, or diagnosing a production crash) with strict, machine-readable handshakes.
+`atomic-sdlc` is a high-precision collection of single-responsibility AI agent **Commands**. Unlike "monolithic" AI assistants, these agents are **Atomic**: they function as pure technical units that perform one specific transformation (e.g., auditing a requirement, generating a schema, or diagnosing a production crash) with strict, machine-readable handshakes.
 
 ---
 
@@ -69,7 +69,7 @@ An `.ai-instructions.md` file is located in the root. When using a coding assist
 
 ---
 
-### 🛠️ The Atomic Skillset (Master Registry)
+### 🛠️ The Atomic Command-Set (Master Registry)
 
 | Command Name | Category | Description | Purpose | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -130,13 +130,16 @@ An `.ai-instructions.md` file is located in the root. When using a coding assist
 ```text
 atomic-sdlc/
 ├── gemini-extension.json    # Manifest and versioning
+├── GEMINI.md                # Project-specific AI instructions
 ├── commands/
-│   └── [verb].toml          # CLI definitions & agent prompts
+│   └── atomic/
+│       └── [verb].toml      # CLI definitions & agent prompts
+└── conductor/               # Conductor project management
 ```
 ## 🤝 Contributing
-This project thrives on Atomic Contributions. To add a skill:
+This project thrives on Atomic Contributions. To add a command:
 
 1.  Define a Single Responsibility.
-2.  Create a .toml command in /commands with a clear persona.
-3.  Ensure the prompt uses read_file and write_file.
-4.  Submit a PR; the /atomic:review agent will audit your contribution.
+2.  Create a .toml command in `/commands/atomic/` with a clear persona.
+3.  Ensure the prompt uses `read_file` and `write_file`.
+4.  Submit a PR; the `/atomic:review` agent will audit your contribution.
