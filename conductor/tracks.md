@@ -10,7 +10,4 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Package Coherence Audit & Cleanup**
   *Link: [./tracks/package_coherence_audit_20260509/](./tracks/package_coherence_audit_20260509/)*
 
-- [x] **Track: Hierarchical Master & Workers Refactor**
-  *Link: [./tracks/hierarchical_refactor_20260509/](./tracks/hierarchical_refactor_20260509/)*
-
 
