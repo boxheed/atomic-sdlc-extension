@@ -1,6 +1,6 @@
 # Implementation Plan: Package Coherence Audit & Cleanup
 
-## Phase 1: Core Configuration Fix
+## Phase 1: Core Configuration Fix [checkpoint: 8d6e831]
 This phase focuses on fixing the broken build process.
 
 - [x] Task: Update `package.json` to remove the `skills/` reference from the `package` script. a26371b
