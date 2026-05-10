@@ -28,7 +28,7 @@ The project adopts a **Senior Engineering Persona**: authoritative, rigorous, an
 - **Zero-Hang Execution:** Ensures non-blocking behavior in automated environments by suppressing interactive prompts during autonomous runs.
 - **CLI-First Efficiency:** Skills should be optimized for terminal use, supporting standard I/O and command piping.
 - **Explicit Quality Gates:** All auditors and critics must provide an explicit `PASS` or `FAIL` status to maintain pipeline integrity.
-- **Source of Truth:** Skills should always reference and contribute to established "Sources of Truth" (e.g., `SPEC.md`, `ARCH.md`).
+- **Source of Truth:** Skills should always reference and contribute to established "Sources of Truth" (e.g., `DISCOVERY_SPEC.md`, `DESIGN_ARCH.md`).
 
 ## Error Handling & Reliability
 - **Halt-on-Failure:** In a pipeline, any critical error or audit failure must halt the process immediately to prevent "context drift."

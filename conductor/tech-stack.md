@@ -15,6 +15,7 @@
 - **Adaptive Handshake Protocol:** Implements an I/O Priority Ladder (Explicit Args > Inferred Discovery > Interactive Fallback) to ensure precision and autonomy.
 - **Mode-Aware Branching:** Dynamic behavior adjustment between interactive and non-interactive (YOLO) environments.
 - **Deterministic Handshakes:** Contract-bound interactions using minified JSON schemas to ensure reliable data transfer between skills.
+- **Standardized Artifact Naming:** All artifacts follow the `[PHASE]_[RESULT].[EXT]` convention for predictability and machine-readability.
 - **Markdown-First Reporting:** Using structured Markdown for all human-readable outputs and project documentation.
 - **State Management:** All commands must be stateless, with required context provided through discrete file artifacts.
 
