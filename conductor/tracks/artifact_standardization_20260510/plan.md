@@ -25,6 +25,7 @@
 
 ### [x] Task 2.1: Update `GEMINI.md` to reflect the new naming conventions. (b891799)
 - Update `GEMINI.md` to reflect the new naming conventions.
+### [x] Task 2.2: Verify each command's discovery logic via manual test runs (if possible) or prompt inspection. (03897af)
 - Verify each command's discovery logic via manual test runs (if possible) or prompt inspection.
 
 ## Success Criteria
