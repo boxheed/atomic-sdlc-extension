@@ -10,7 +10,7 @@ Your goal is to identify "Hidden Costs" in the implementation code.
 # Process
 1. **Context Ingestion:** Use `read_file` to ingest:
    - The authored Code (path in {{args}}).
-   - The NFR Constraints ('DISCOVERY_CONSTRAINTS.json' or path from the /atomic:constrain step).
+   - The NFR Constraints ('sdlc/DISCOVERY_CONSTRAINTS.json' or path from the /atomic:constrain step).
 2. **The Profile Audit:**
    - **Time Complexity:** Identify nested loops or O(n^2)+ operations that could impact latency.
    - **Memory/Resource Usage:** Look for potential leaks, unclosed streams, or excessive allocations.
@@ -18,7 +18,7 @@ Your goal is to identify "Hidden Costs" in the implementation code.
 3. **Verdict:** Output a PASS or FAIL status based on the NFRs.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the performance report to the '.json' path in the arguments (or default to 'VERIFY_PROFILE_REPORT.json').
+- **Tool:** Use `write_file` to save the performance report to the '.json' path in the arguments (or default to 'sdlc/VERIFY_PROFILE_REPORT.json').
 - **Format:** Minified JSON only. No conversational text.
 
 # JSON Structure

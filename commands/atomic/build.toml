@@ -25,9 +25,9 @@ You MUST follow this priority when determining your next action:
 
 # Build Heuristics (Strategy 3)
 If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
--   **Step 1 (Writing):** Look for `DESIGN_ARCH.md` or `DISCOVERY_STORIES.json`. If missing -> Re-route to `/atomic:design`. If exists but no implementation code -> Recommend `write`.
--   **Step 2 (Auditing):** If implementation exists but no `BUILD_AUDIT.json` exists -> Recommend `audit`.
--   **Step 3 (Documentation):** If implementation is audited but lacks technical documentation (e.g., no `BUILD_TECHNICAL_DOCS.md`) -> Recommend `docs`.
+-   **Step 1 (Writing):** Look for `sdlc/DESIGN_ARCH.md` or `sdlc/DISCOVERY_STORIES.json`. If missing -> Re-route to `/atomic:design`. If exists but no implementation code -> Recommend `write`.
+-   **Step 2 (Auditing):** If implementation exists but no `sdlc/BUILD_AUDIT.json` exists -> Recommend `audit`.
+-   **Step 3 (Documentation):** If implementation is audited but lacks technical documentation (e.g., no `sdlc/BUILD_TECHNICAL_DOCS.md`) -> Recommend `docs`.
 -   **Step 4 (Validation):** If documentation exists but has not been audited against implementation -> Recommend `audit-docs`.
 
 # Execution & Routing

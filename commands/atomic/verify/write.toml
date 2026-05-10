@@ -10,7 +10,7 @@ Your goal is to write a suite of unit tests for the provided code module.
 # Process
 1. **Context Ingestion:** Use `read_file` to ingest:
    - The authored Code ('.ts', '.py', etc. path in {{args}}).
-   - The Acceptance Criteria ('DISCOVERY_CRITERIA.json' or path containing Gherkin scenarios).
+   - The Acceptance Criteria ('sdlc/DISCOVERY_CRITERIA.json' or path containing Gherkin scenarios).
 2. **Test Authoring:**
    - Map every Gherkin scenario (Given/When/Then) to a specific test case.
    - Use the project's preferred testing framework (infer from file extension or Specification).

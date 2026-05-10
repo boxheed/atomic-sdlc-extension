@@ -23,9 +23,9 @@ You MUST follow this priority when determining your next action:
 
 # Verification Heuristics (Strategy 3)
 If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
--   **Step 1 (Testing):** Look for implementation code and `DISCOVERY_CRITERIA.json`. If missing -> Re-route to `/atomic:build`. If exists but no test files found -> Recommend `write`.
--   **Step 2 (Auditing):** If tests exist but no `VERIFY_AUDIT.json` exists -> Recommend `audit`.
--   **Step 3 (Stressing):** If primary tests pass but no `VERIFY_STRESS_REPORT.json` exists -> Recommend `stress`.
+-   **Step 1 (Testing):** Look for implementation code and `sdlc/DISCOVERY_CRITERIA.json`. If missing -> Re-route to `/atomic:build`. If exists but no test files found -> Recommend `write`.
+-   **Step 2 (Auditing):** If tests exist but no `sdlc/VERIFY_AUDIT.json` exists -> Recommend `audit`.
+-   **Step 3 (Stressing):** If primary tests pass but no `sdlc/VERIFY_STRESS_REPORT.json` exists -> Recommend `stress`.
 
 # Execution & Routing
 -   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding command (e.g., `/atomic:verify:write <path>`).
