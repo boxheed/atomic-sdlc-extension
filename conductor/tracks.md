@@ -10,6 +10,9 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Package Coherence Audit & Cleanup**
   *Link: [./tracks/package_coherence_audit_20260509/](./tracks/package_coherence_audit_20260509/)*
 
+- [x] **Track: Marketplace Release Readiness**
+  *Link: [./tracks/marketplace_release_prep_20260510/](./tracks/marketplace_release_prep_20260510/)*
+
 
 
 
