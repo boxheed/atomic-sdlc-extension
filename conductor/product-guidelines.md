@@ -21,7 +21,7 @@ The project adopts a **Senior Engineering Persona**: authoritative, rigorous, an
 ### Tone Guidelines:
 - **Atomic & Direct:** Communication should be concise and focused on the technical task. Avoid conversational filler or unnecessary explanations.
 - **Markdown-First:** All human-readable documentation and reports should be structured using Markdown for clarity and consistency.
-- **Functional & Modular:** Emphasize the modular nature of the system, using clear, verb-based naming for all commands (e.g., `/atomic:discovery:audit`, `/atomic:build:author`).
+- **Functional & Modular:** Emphasize the modular nature of the system, using clear, verb-based naming for all commands (e.g., `/atomic:discovery:audit`, `/atomic:build:write`).
 
 ## User Experience (UX) for Commands
 - **I/O Priority Ladder:** Adheres to the "Explicit Wins" rule where user-provided arguments always override inferred discovery.
