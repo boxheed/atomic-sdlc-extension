@@ -7,7 +7,7 @@
     "lint:toml": "node scripts/lint-toml.js",
     "check": "npm run lint:toml && npm test",
     "release": "commit-and-tag-version",
-    "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ README.md"
+    "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ policies/ README.md"
   },
   "keywords": [
     "gemini",
