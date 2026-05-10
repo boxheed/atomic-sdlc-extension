@@ -11,7 +11,7 @@ Rename sub-commands for the first two phases and update orchestrators.
 ## Phase 2: Build & Verify Rename
 Rename sub-commands for implementation and testing phases.
 
-- [ ] Task: Rename build sub-commands: `author`->`write`, `review`->`audit`, `validate`->`audit-docs`, `document`->`docs`.
+- [x] Task: Rename build sub-commands: `author`->`write`, `review`->`audit`, `validate`->`audit-docs`, `document`->`docs`. 8c57dca
 - [ ] Task: Update `commands/atomic/build.toml` logic and descriptions.
 - [ ] Task: Rename verify sub-commands: `test`->`write`, `scrutinize`->`audit`, `probe`->`stress`.
 - [ ] Task: Update `commands/atomic/verify.toml` logic and descriptions.
