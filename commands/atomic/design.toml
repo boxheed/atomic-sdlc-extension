@@ -25,9 +25,9 @@ You MUST follow this priority when determining your next action:
 
 # Design Heuristics (Strategy 3)
 If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
--   **Step 1 (Architecting):** Look for `DISCOVERY_SPEC.md` or `DISCOVERY_STORIES.json`. If missing -> Re-route to `/atomic:discovery`. If exists but no `DESIGN_ARCH.md` -> Recommend `architect`.
--   **Step 2 (Auditing):** If `DESIGN_ARCH.md` exists but no `DESIGN_AUDIT.json` exists -> Recommend `audit`.
--   **Step 3 (Contracting):** If `DESIGN_ARCH.md` is complete but no `DESIGN_SCHEMA.sql` or `DESIGN_API_CONTRACT.yaml` exist -> Recommend `data` or `api`.
+-   **Step 1 (Architecting):** Look for `sdlc/DISCOVERY_SPEC.md` or `sdlc/DISCOVERY_STORIES.json`. If missing -> Re-route to `/atomic:discovery`. If exists but no `sdlc/DESIGN_ARCH.md` -> Recommend `architect`.
+-   **Step 2 (Auditing):** If `sdlc/DESIGN_ARCH.md` exists but no `sdlc/DESIGN_AUDIT.json` exists -> Recommend `audit`.
+-   **Step 3 (Contracting):** If `sdlc/DESIGN_ARCH.md` is complete but no `sdlc/DESIGN_SCHEMA.sql` or `sdlc/DESIGN_API_CONTRACT.yaml` exist -> Recommend `data` or `api`.
 
 # Execution & Routing
 -   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding command (e.g., `/atomic:design:architect <path>`).

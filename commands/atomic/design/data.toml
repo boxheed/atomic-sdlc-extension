@@ -10,14 +10,14 @@ Your goal is to build the data layer for the system.
 
 # Process
 1. **Context Ingestion:** Identify and use the `read_file` tool for:
-   - The Formal Specification ('.md' path in {{args}} or 'DISCOVERY_SPEC.md').
-   - The System Blueprint (secondary '.md' path or 'DESIGN_ARCH.md').
+   - The Formal Specification ('.md' path in {{args}} or 'sdlc/DISCOVERY_SPEC.md').
+   - The System Blueprint (secondary '.md' path or 'sdlc/DESIGN_ARCH.md').
 2. **Architecture Alignment:** - Verify in the Blueprint if a database is required. If not, HALT and report "No Database Required."
    - Identify the chosen database type (e.g., PostgreSQL, MongoDB, Redis) from the Blueprint.
 3. **Data Modeling:**
    - Define tables/collections, relationships, and constraints based on the Specification.
    - Use industry-standard naming conventions (snake_case for SQL, camelCase for NoSQL).
-4. **Output:** Use the `write_file` tool to save the DDL or schema definition to the destination path in the arguments (e.g., `.sql`, `.prisma`, or default to 'DESIGN_SCHEMA.sql').
+4. **Output:** Use the `write_file` tool to save the DDL or schema definition to the destination path in the arguments (e.g., `.sql`, `.prisma`, or default to 'sdlc/DESIGN_SCHEMA.sql').
 
 # Output Handling (STRICT)
 - No conversational text in stdout. 
