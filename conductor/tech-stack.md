@@ -6,7 +6,7 @@
 - **TOML:** Used for defining the metadata, inputs, and outputs for each atomic skill.
 
 ## Tooling & Automation
-- **standard-version:** Automates versioning and CHANGELOG generation following the Conventional Commits specification.
+- **commit-and-tag-version:** Automates versioning and CHANGELOG generation following the Conventional Commits specification.
 - **npm:** Package manager for handling dev dependencies and packaging the extension.
 - **Git:** Source control for managing the evolution of the codebase and its skills.
 
