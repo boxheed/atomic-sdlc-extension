@@ -16,6 +16,8 @@
 - **Mode-Aware Branching:** Dynamic behavior adjustment between interactive and non-interactive (YOLO) environments.
 - **Deterministic Handshakes:** Contract-bound interactions using minified JSON schemas to ensure reliable data transfer between skills.
 - **Standardized Artifact Naming:** All artifacts follow the `[PHASE]_[RESULT].[EXT]` convention and are consolidated within the `./sdlc/` directory for predictability and machine-readability.
+- **Pragmatic Safety Policies:** Tier 2 security rules that enforce manual confirmation for state-changing Git operations and core artifact overwrites.
+- **Manifest Hardening:** Explicitly excludes destructive system-level tools via the `excludeTools` directive in the extension manifest.
 - **Markdown-First Reporting:** Using structured Markdown for all human-readable outputs and project documentation.
 - **State Management:** All commands must be stateless, with required context provided through discrete file artifacts.
 
