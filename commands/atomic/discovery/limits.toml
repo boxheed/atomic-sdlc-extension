@@ -20,7 +20,7 @@ Analyze the stakeholder input in {{args}}. Your goal is to identify the "Technic
 
 # Output Requirement (STRICT)
 1. **Write to File:** Use `write_file`.
-   - Filename parsed from command or default to `NFR_CONSTRAINTS.json`.
+   - Filename parsed from command or default to `DISCOVERY_CONSTRAINTS.json`.
 2. **Format:** Output ONLY minified JSON.
 3. **Internal Silence:** No stdout text.
 

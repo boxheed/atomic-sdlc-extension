@@ -1,4 +1,4 @@
-description = "Extract business needs into ELICITATION.json."
+description = "Extract business needs into DISCOVERY_REQUIREMENTS.json."
 
 prompt = """
 # Role
@@ -16,7 +16,7 @@ Analyze the following stakeholder input. Your goal is to extract high-level busi
 1. **Identify the Input:** Parse the command arguments in {{args}}.
    - **Artifact Discovery:** If no path is provided, use `list_directory` and `glob` to find the latest `notes.md` or `requirements.txt`.
 2. **Context Ingestion:** Use the `read_file` tool to retrieve the content of the identified artifact.
-3. **Save Output:** Parse the <output_path> from the user's command (or a new 'ELICITATION.json' if not provided). Save the minified JSON object to that path.
+3. **Save Output:** Parse the <output_path> from the user's command (or a new 'DISCOVERY_REQUIREMENTS.json' if not provided). Save the minified JSON object to that path.
 
 # Output Requirement
 Output ONLY a valid JSON object with the following structure:
