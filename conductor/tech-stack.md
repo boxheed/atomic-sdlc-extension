@@ -6,15 +6,20 @@
 - **TOML:** Used for defining the metadata, inputs, and outputs for each atomic skill.
 
 ## Tooling & Automation
-- **standard-version:** Automates versioning and CHANGELOG generation following the Conventional Commits specification.
+- **commit-and-tag-version:** Automates versioning and CHANGELOG generation following the Conventional Commits specification.
 - **npm:** Package manager for handling dev dependencies and packaging the extension.
 - **Git:** Source control for managing the evolution of the codebase and its skills.
 
 ## Architecture & Protocols
-- **Atomic Skill Architecture:** A modular system of single-responsibility, stateless agents.
+- **Hierarchical Atomic Command Architecture:** A modular system of Master Agent orchestrators and namespaced worker commands.
+- **Adaptive Handshake Protocol:** Implements an I/O Priority Ladder (Explicit Args > Inferred Discovery > Interactive Fallback) to ensure precision and autonomy.
+- **Mode-Aware Branching:** Dynamic behavior adjustment between interactive and non-interactive (YOLO) environments.
 - **Deterministic Handshakes:** Contract-bound interactions using minified JSON schemas to ensure reliable data transfer between skills.
+- **Standardized Artifact Naming:** All artifacts follow the `[PHASE]_[RESULT].[EXT]` convention and are consolidated within the `./sdlc/` directory for predictability and machine-readability.
+- **Pragmatic Safety Policies:** Tier 2 security rules that enforce manual confirmation for state-changing Git operations and core artifact overwrites.
+- **Manifest Hardening:** Explicitly excludes destructive system-level tools via the `excludeTools` directive in the extension manifest.
 - **Markdown-First Reporting:** Using structured Markdown for all human-readable outputs and project documentation.
-- **State Management:** All skills must be stateless, with required context provided through discrete file artifacts.
+- **State Management:** All commands must be stateless, with required context provided through discrete file artifacts.
 
 ## Quality Gates
 - **Contract Verification:** Ensuring all tool outputs match the defined JSON schemas.

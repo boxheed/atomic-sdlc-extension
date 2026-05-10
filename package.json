@@ -4,12 +4,10 @@
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
   "scripts": {
     "test": "echo \"Warning: no test available\" && exit 0",
-    "check": "npm test",
-    "release": "standard-version",
-    "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ skills/ README.md"
-  },
-  "devDependencies": {
-    "standard-version": "^9.5.0"
+    "lint:toml": "node scripts/lint-toml.js",
+    "check": "npm run lint:toml && npm test",
+    "release": "commit-and-tag-version",
+    "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ policies/ README.md"
   },
   "keywords": [
     "gemini",
@@ -19,5 +17,9 @@
     "agent"
   ],
   "author": "Andrew Dunn",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "commit-and-tag-version": "^12.7.3",
+    "toml": "^4.1.1"
+  }
 }

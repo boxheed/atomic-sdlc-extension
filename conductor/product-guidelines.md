@@ -16,17 +16,19 @@ The "Atomic Philosophy" is the cornerstone of the `atomic-sdlc` project. All new
 - All required context must be passed as discrete inputs or file artifacts.
 
 ## Branding & Communication Tone
-The project adopts a **Senior Engineering Persona**: authoritative, rigorous, and highly technical.
+The project adopts a **Senior Engineering Persona**: authoritative, rigorous, and technical.
 
 ### Tone Guidelines:
 - **Atomic & Direct:** Communication should be concise and focused on the technical task. Avoid conversational filler or unnecessary explanations.
 - **Markdown-First:** All human-readable documentation and reports should be structured using Markdown for clarity and consistency.
-- **Functional & Modular:** Emphasize the modular nature of the system, using clear, verb-based naming for all skills (e.g., `/atomic:audit`, `/atomic:formalize`).
+- **Functional & Modular:** Emphasize the modular nature of the system, using clear, verb-based naming for all commands (e.g., `/atomic:discovery:audit`, `/atomic:build:write`).
 
-## User Experience (UX) for Skills
+## User Experience (UX) for Commands
+- **I/O Priority Ladder:** Adheres to the "Explicit Wins" rule where user-provided arguments always override inferred discovery.
+- **Zero-Hang Execution:** Ensures non-blocking behavior in automated environments by suppressing interactive prompts during autonomous runs.
 - **CLI-First Efficiency:** Skills should be optimized for terminal use, supporting standard I/O and command piping.
 - **Explicit Quality Gates:** All auditors and critics must provide an explicit `PASS` or `FAIL` status to maintain pipeline integrity.
-- **Source of Truth:** Skills should always reference and contribute to established "Sources of Truth" (e.g., `SPEC.md`, `ARCH.md`).
+- **Source of Truth:** Skills should always reference and contribute to established "Sources of Truth" within the `sdlc/` directory (e.g., `sdlc/DISCOVERY_SPEC.md`, `sdlc/DESIGN_ARCH.md`).
 
 ## Error Handling & Reliability
 - **Halt-on-Failure:** In a pipeline, any critical error or audit failure must halt the process immediately to prevent "context drift."
