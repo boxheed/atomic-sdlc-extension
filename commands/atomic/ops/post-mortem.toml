@@ -9,8 +9,8 @@ Your goal is to identify systemic failures in the Atomic Pipeline that allowed a
 
 # Process
 1. **Context Ingestion:** Identify and use the `read_file` tool for:
-   - The Diagnosis Report ('.json' path from /atomic:diagnose).
-   - The original Acceptance Criteria ('.json' path).
+   - The Diagnosis Report ('.json' path or 'OPS_RCA_REPORT.json').
+   - The original Acceptance Criteria ('DISCOVERY_CRITERIA.json' or path in {{args}}).
    - The Verification/Test Logs ('.json' paths).
 2. **Gap Analysis:**
    - **The "How":** Why did `/atomic:test` or `/atomic:scrutinize` miss this edge case?
@@ -19,7 +19,7 @@ Your goal is to identify systemic failures in the Atomic Pipeline that allowed a
 3. **Continuous Improvement:** Summarize the "Learning" into an actionable process change.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the retrospective to the '.md' path in {{args}}.
+- **Tool:** Use `write_file` to save the retrospective to the '.md' path in {{args}} (or default to 'OPS_POST_MORTEM.md').
 - **Format:** Clean Markdown report with a "Prompt Updates" section. No conversational text.
 
 # Input Command

@@ -10,7 +10,7 @@ Verify that the new code module integrates correctly with the existing system ar
 # Process
 1. **Context Ingestion:** Use `read_file` to ingest:
    - The new Code Module (path in {{args}}).
-   - The System Interface/API Spec ('.yaml' or '.ts' path).
+   - The System Interface/API Spec ('DESIGN_API_CONTRACT.yaml' or '.ts' path).
    - The project's existing 'Entry Point' or 'Module Map' (if provided).
 2. **The Integration Audit:**
    - **Dependency Check:** Are all imports valid and available in the project structure?
@@ -19,7 +19,7 @@ Verify that the new code module integrates correctly with the existing system ar
 3. **Verdict:** Output a PASS or FAIL status.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the integration report to the '.json' path.
+- **Tool:** Use `write_file` to save the integration report to the '.json' path (or default to 'BUILD_INTEGRATION_AUDIT.json').
 - **Format:** Minified JSON only.
 
 # JSON Structure

@@ -10,7 +10,7 @@ Your goal is to ensure the system is "Transparent" by suggesting specific monito
 # Process
 1. **Context Ingestion:** Identify and use the `read_file` tool for:
    - The authored Code (path in {{args}}).
-   - The System Blueprint ('.md' path or './docs/ARCH.md').
+   - The System Blueprint ('.md' path or 'DESIGN_ARCH.md').
 2. **Observability Mapping:**
    - **Traces:** Identify entry/exit points for Request/Response cycles to place OTel spans.
    - **Metrics:** Identify counters (e.g., total requests) and histograms (e.g., latency) relevant to the NFRs.
@@ -18,7 +18,7 @@ Your goal is to ensure the system is "Transparent" by suggesting specific monito
 3. **Alignment:** Ensure the instrumentation matches the "Scalability" and "Availability" goals in the Blueprint.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the instrumentation plan to the '.json' or '.md' path in {{args}}.
+- **Tool:** Use `write_file` to save the instrumentation plan to the '.json' or '.md' path in {{args}} (or default to 'OPS_MONITOR_PLAN.json').
 - **Format:** If JSON, use a schema of `[{ "type": "Metric|Trace|Log", "location": "...", "description": "...", "priority": "High|Low" }]`.
 - **Internal Silence:** No conversational text in stdout.
 

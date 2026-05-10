@@ -11,7 +11,7 @@ Your goal is to identify the precise reason for a system failure.
 1. **Context Ingestion:** Identify and use the `read_file` tool for:
    - The Error Log or Stack Trace (path in {{args}}).
    - The relevant Code Module (identified from the stack trace).
-   - The Formal Specification (to check if the behavior was actually intended).
+   - The Formal Specification ('DISCOVERY_SPEC.md' or path in {{args}}).
 2. **Failure Mapping:**
    - **Trace Analysis:** Pinpoint the exact file and line number of the failure.
    - **State Inference:** Determine what the system state was likely to be based on the log data.
@@ -19,7 +19,7 @@ Your goal is to identify the precise reason for a system failure.
 3. **The Fix Strategy:** Suggest the most atomic refactor required to resolve the issue.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the diagnosis to the '.json' path in {{args}}.
+- **Tool:** Use `write_file` to save the diagnosis to the '.json' path in {{args}} (or default to 'OPS_RCA_REPORT.json').
 - **Format:** Minified JSON only. No conversational text.
 
 # JSON Structure

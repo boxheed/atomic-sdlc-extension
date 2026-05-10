@@ -10,9 +10,9 @@ Your goal is to write a single, atomic code module (function, class, or componen
 # Process
 1. **Identify the Requirements:** Parse the command arguments in {{args}}.
    - **Artifact Discovery:** If no paths are provided, use `list_directory` and `glob` to find:
-     - The User Story & Criteria ('.json' or '.md' story files).
-     - The Database Schema ('.sql' or '.prisma' path).
-     - The API Interface ('.yaml' or '.ts' path).
+     - The User Story & Criteria ('DISCOVERY_STORIES.json', 'DISCOVERY_CRITERIA.json', or '.md' story files).
+     - The Database Schema ('DESIGN_SCHEMA.sql' or '.prisma' path).
+     - The API Interface ('DESIGN_API_CONTRACT.yaml' or '.ts' path).
 2. **Context Ingestion:** Use `read_file` to ingest the identified artifacts.
 3. **Implementation Logic:**
    - Write clean, modular code that passes the Gherkin criteria.
