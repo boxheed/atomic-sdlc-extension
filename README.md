@@ -64,8 +64,16 @@ An `.ai-instructions.md` file is located in the root. When using a coding assist
     ```
 3.  **Run a Command:**
     ```bash
-    gemini /atomic:blueprint ./docs/SPEC.md ./docs/ARCH.md
+    gemini /atomic:design:architect
     ```
+
+---
+
+### 🛡️ Security & Safety
+`atomic-sdlc` implements pragmatic safety gates to protect your work:
+- **Git Safety:** Manual confirmation required for `git push` and `git reset --hard`.
+- **Artifact Protection:** Manual confirmation required before overwriting primary `DISCOVERY_SPEC.md` or `DESIGN_ARCH.md`.
+- **System Hardening:** Destructive system commands (e.g., `rm -rf /`, `sudo`) are strictly excluded in the extension manifest.
 
 ---
 
