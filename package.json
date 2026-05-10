@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Warning: no test available\" && exit 0",
     "check": "npm test",
-    "release": "standard-version",
+    "release": "commit-and-tag-version",
     "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ README.md"
   },
   "keywords": [
