@@ -10,7 +10,4 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Package Coherence Audit & Cleanup**
   *Link: [./tracks/package_coherence_audit_20260509/](./tracks/package_coherence_audit_20260509/)*
 
-- [x] **Track: Unified Language & Intuitive Naming Refactor**
-  *Link: [./tracks/unified_language_refactor_20260509/](./tracks/unified_language_refactor_20260509/)*
-
 
