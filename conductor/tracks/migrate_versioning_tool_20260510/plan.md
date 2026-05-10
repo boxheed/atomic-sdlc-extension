@@ -13,7 +13,7 @@ Align the project documentation with the new tool.
 - [x] Task: Update `tech-stack.md` to list `commit-and-tag-version` instead of `standard-version`. f8a258a
 - [x] Task: Audit other documentation for stale references. 7718bdb
 
-## Phase 3: Verification
+## Phase 3: Verification [checkpoint: 3bef43c]
 Verify the new tool's functionality.
 
 - [x] Task: Run `npm run release -- --dry-run` to confirm the tool works with existing config and git history. b5fd316
