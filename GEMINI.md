@@ -9,14 +9,14 @@
 ## 🏗️ The Atomic Philosophy
 
 1.  **Discrete Context:** Agents only receive the specific data required for their task.
-2.  **Stateless Handshakes:** Communication happens via standardized file artifacts (e.g., `DISCOVERY_SPEC.md`, `DESIGN_ARCH.md`, `BUILD_AUDIT.json`), ensuring no reliance on conversation history.
-3.  **Halt-on-Failure:** Quality gates (Auditors/Critics) must output an explicit `PASS` or `FAIL` status to a `[PHASE]_AUDIT.json` file to control the pipeline flow.
+2.  **Stateless Handshakes:** Communication happens via standardized file artifacts in the `sdlc/` directory (e.g., `sdlc/DISCOVERY_SPEC.md`, `sdlc/DESIGN_ARCH.md`, `sdlc/BUILD_AUDIT.json`), ensuring no reliance on conversation history.
+3.  **Halt-on-Failure:** Quality gates (Auditors/Critics) must output an explicit `PASS` or `FAIL` status to a `sdlc/[PHASE]_AUDIT.json` file to control the pipeline flow.
 4.  **Contract-Bound:** All machine-to-machine outputs follow a minified JSON schema for deterministic parsing.
-5.  **Standardized Artifact Naming:** All artifacts follow the `[PHASE]_[RESULT].[EXT]` convention for predictability.
+5.  **Standardized Artifact Naming:** All artifacts follow the `[PHASE]_[RESULT].[EXT]` convention and are stored in the flat `./sdlc/` container for predictability.
 
 ---
 
-## 📦 Artifact Registry (Phase-Result Convention)
+## 📦 Artifact Registry (sdlc/ Directory)
 
 | Phase | Core Result Artifacts |
 | :--- | :--- |
