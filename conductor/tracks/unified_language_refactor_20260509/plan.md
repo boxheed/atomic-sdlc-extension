@@ -1,6 +1,6 @@
 # Implementation Plan: Unified Language & Intuitive Naming Refactor
 
-## Phase 1: Discovery & Design Rename
+## Phase 1: Discovery & Design Rename [checkpoint: dc10ba0]
 Rename sub-commands for the first two phases and update orchestrators.
 
 - [x] Task: Rename discovery sub-commands: `elicit`->`extract`, `constrain`->`limits`, `formalize`->`spec`, `atomize`->`slice`. 38eab8b
