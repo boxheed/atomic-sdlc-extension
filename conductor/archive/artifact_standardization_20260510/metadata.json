@@ -1,0 +1,7 @@
+{
+  "id": "artifact_standardization_20260510",
+  "title": "Atomic SDLC Artifact Standardization",
+  "description": "Standardize all input and output artifact naming across the atomic-sdlc command suite using the Phase-Result convention.",
+  "status": "planned",
+  "created_at": "2026-05-10"
+}
