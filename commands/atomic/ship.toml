@@ -22,9 +22,9 @@ You MUST follow this priority when determining your next action:
 
 # Ship Heuristics (Strategy 3)
 If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
--   **Step 1 (CI/CD):** Look for implementation code and architectural design. If missing -> Re-route to `/atomic:build`. If exists but no CI/CD configuration (e.g., no `.github/workflows` or `Jenkinsfile`) found -> Recommend `cicd`.
--   **Step 2 (Infrastructure):** If architectural design includes infrastructure components but no IaC (e.g., no `*.tf` or `*.yaml` for CloudFormation) exists -> Recommend `infra`.
--   **Step 3 (Security):** If pipeline and provisioning exist but no security audit or hardening report exists -> Recommend `secure`.
+-   **Step 1 (CI/CD):** Look for implementation code and `DESIGN_ARCH.md`. If missing -> Re-route to `/atomic:build`. If exists but no `SHIP_CICD_CONFIG.yml` found -> Recommend `cicd`.
+-   **Step 2 (Infrastructure):** If architectural design includes infrastructure components but no `SHIP_INFRA_IAC.tf` exists -> Recommend `infra`.
+-   **Step 3 (Security):** If pipeline and provisioning exist but no `SHIP_SECURITY_AUDIT.json` exists -> Recommend `secure`.
 
 # Execution & Routing
 -   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding command (e.g., `/atomic:ship:cicd <path>`).

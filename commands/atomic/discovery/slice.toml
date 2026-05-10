@@ -34,7 +34,7 @@ Analyze the Formal Specification and break it into "Atomic User Stories."
     "title": "Short, Actionable Name",
     "story": "As a [Role], I want to [Action], so that [Value].",
     "complexity": "1, 2, 3, 5, or 8 (Fibonacci)",
-    "spec_ref": "Requirement ID from the SPEC.md"
+    "spec_ref": "Requirement ID from the DISCOVERY_SPEC.md"
   }
 ]
 
