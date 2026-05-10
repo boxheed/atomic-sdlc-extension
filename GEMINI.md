@@ -9,10 +9,23 @@
 ## 🏗️ The Atomic Philosophy
 
 1.  **Discrete Context:** Agents only receive the specific data required for their task.
-2.  **Stateless Handshakes:** Communication happens via file artifacts (`SPEC.md`, `ARCH.md`, `.json`), ensuring no reliance on conversation history.
-3.  **Halt-on-Failure:** Quality gates (Auditors/Critics) must output an explicit `PASS` or `FAIL` status to control the pipeline flow.
+2.  **Stateless Handshakes:** Communication happens via standardized file artifacts (e.g., `DISCOVERY_SPEC.md`, `DESIGN_ARCH.md`, `BUILD_AUDIT.json`), ensuring no reliance on conversation history.
+3.  **Halt-on-Failure:** Quality gates (Auditors/Critics) must output an explicit `PASS` or `FAIL` status to a `[PHASE]_AUDIT.json` file to control the pipeline flow.
 4.  **Contract-Bound:** All machine-to-machine outputs follow a minified JSON schema for deterministic parsing.
-5.  **Mode-Aware Autonomy:** Orchestrators adapt their behavior based on the environment (Interactive vs. YOLO) and follow a strict **I/O Priority Ladder**.
+5.  **Standardized Artifact Naming:** All artifacts follow the `[PHASE]_[RESULT].[EXT]` convention for predictability.
+
+---
+
+## 📦 Artifact Registry (Phase-Result Convention)
+
+| Phase | Core Result Artifacts |
+| :--- | :--- |
+| **DISCOVERY** | `REQUIREMENTS.json`, `CONSTRAINTS.json`, `SPEC.md`, `STORIES.json`, `CRITERIA.json`, `AUDIT.json` |
+| **DESIGN** | `ARCH.md`, `SCHEMA.sql`, `API_CONTRACT.yaml`, `UI_SPEC.md`, `AUDIT.json` |
+| **BUILD** | `AUDIT.json`, `INTEGRATION_AUDIT.json`, `TECHNICAL_DOCS.md` |
+| **VERIFY** | `AUDIT.json`, `STRESS_REPORT.json`, `PROFILE_REPORT.json` |
+| **SHIP** | `CICD_CONFIG.yml`, `INFRA_IAC.tf`, `SECURITY_AUDIT.json` |
+| **OPS** | `MONITOR_PLAN.json`, `RCA_REPORT.json`, `POST_MORTEM.md` |
 
 ---
 
