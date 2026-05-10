@@ -1,0 +1,13 @@
+[[rule]]
+description = "Confirm overwriting the project specification."
+tool = "write_file"
+arguments = { file_path = "sdlc/DISCOVERY_SPEC.md" }
+decision = "ask_user"
+message = "The agent is attempting to overwrite the primary DISCOVERY_SPEC.md. Do you approve this change?"
+
+[[rule]]
+description = "Confirm overwriting the system architecture."
+tool = "write_file"
+arguments = { file_path = "sdlc/DESIGN_ARCH.md" }
+decision = "ask_user"
+message = "The agent is attempting to overwrite the primary DESIGN_ARCH.md. Do you approve this change?"

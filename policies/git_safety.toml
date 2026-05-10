@@ -1,0 +1,13 @@
+[[rule]]
+description = "Require confirmation before pushing to remote."
+tool = "run_shell_command"
+arguments = { command = "*git push*" }
+decision = "ask_user"
+message = "The agent is attempting to push code to a remote repository. Do you want to authorize this sync?"
+
+[[rule]]
+description = "Prevent accidental hard resets."
+tool = "run_shell_command"
+arguments = { command = "*git reset --hard*" }
+decision = "ask_user"
+message = "The agent is attempting a hard reset, which may result in data loss. Proceed?"
