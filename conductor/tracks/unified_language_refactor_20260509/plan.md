@@ -29,4 +29,4 @@ Update all project documentation and verify the build.
 
 - [x] Task: Update `README.md` Master Registry with new names. 069d89e
 - [x] Task: Update `GEMINI.md` and `CONTRIBUTING.md`. 6a69ae2
-- [ ] Task: Final `npm run check` and verification.
+- [x] Task: Final `npm run check` and verification. 2f1f0db
