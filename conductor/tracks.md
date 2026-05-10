@@ -10,6 +10,9 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Package Coherence Audit & Cleanup**
   *Link: [./tracks/package_coherence_audit_20260509/](./tracks/package_coherence_audit_20260509/)*
 
+- [x] **Track: SDLC Directory Restructuring**
+  *Link: [./tracks/sdlc_directory_restructure_20260510/](./tracks/sdlc_directory_restructure_20260510/)*
+
 
 
 
