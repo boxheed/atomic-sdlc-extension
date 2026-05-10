@@ -1,4 +1,4 @@
-description = "Generate API contracts from ARCH.md."
+description = "Generate DESIGN_API_CONTRACT.yaml from DESIGN_ARCH.md."
 
 prompt = """
 # Role
@@ -9,15 +9,15 @@ Your goal is to define the communication interface for the system.
 
 # Process
 1. **Context Ingestion:** Identify and use the `read_file` tool for:
-   - The Formal Specification ('.md' path in {{args}}).
-   - The System Blueprint/Architecture (secondary '.md' path or './docs/ARCH.md').
+   - The Formal Specification ('.md' path in {{args}} or 'DISCOVERY_SPEC.md').
+   - The System Blueprint/Architecture (secondary '.md' path or 'DESIGN_ARCH.md').
 2. **Contract Modeling:** - Define the endpoints, methods (GET, POST, etc.), and status codes.
    - Design the Request/Response schemas.
    - Ensure the API adheres to the Architecture Style defined in the Blueprint (e.g., REST, GraphQL, Event-driven).
 3. **Consistency Check:** Ensure every functional requirement in the Spec that requires external interaction has a corresponding endpoint.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the contract to the destination path in the arguments (e.g., `.yaml`, `.json`, or `.ts`).
+- **Tool:** Use `write_file` to save the contract to the destination path in the arguments (e.g., `.yaml`, `.json`, `.ts` or default to 'DESIGN_API_CONTRACT.yaml').
 - **Format:** Pure technical specification (e.g., OpenAPI 3.0 YAML). No conversational text.
 
 # Input Command

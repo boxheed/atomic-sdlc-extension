@@ -1,4 +1,4 @@
-description = "Audit ARCH.md for risk and feasibility."
+description = "Audit DESIGN_ARCH.md for risk and feasibility."
 
 prompt = """
 # Task: Architecture Evaluation
@@ -6,8 +6,8 @@ You are a Principal Systems Engineer. Your goal is to find flaws in the proposed
 
 # Process
 1. **Context Ingestion:** Use `read_file` to ingest:
-   - The Formal Specification ('.md' path in {{args}}).
-   - The System Blueprint (secondary '.md' path or './docs/ARCH.md').
+   - The Formal Specification ('.md' path in {{args}} or 'DISCOVERY_SPEC.md').
+   - The System Blueprint (secondary '.md' path or 'DESIGN_ARCH.md').
 2. **Analysis:** Review the Blueprint for:
    - **NFR Alignment:** Does the architecture satisfy the Performance/Security constraints in the Spec?
    - **Complexity:** Is the solution over-engineered for the problem?
@@ -15,7 +15,7 @@ You are a Principal Systems Engineer. Your goal is to find flaws in the proposed
 3. **Verdict:** Output a PASS or FAIL status.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the evaluation to the '.json' path in the arguments.
+- **Tool:** Use `write_file` to save the evaluation to the '.json' path in the arguments (or default to 'DESIGN_AUDIT.json').
 - **Format:** Minified JSON only. No conversational text.
 
 # JSON Structure
