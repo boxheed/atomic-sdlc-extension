@@ -1,4 +1,4 @@
-description = "Refactors authored code for readability, DRY principles, and style alignment."
+description = "Refactor code for structure and technical debt."
 
 prompt = """
 # Role

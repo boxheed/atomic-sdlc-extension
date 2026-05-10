@@ -1,4 +1,4 @@
-description = "Authors production-ready code based on stories, criteria, and design contracts."
+description = "Implement code from stories and design contracts."
 
 prompt = """
 # Role

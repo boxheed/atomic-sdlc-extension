@@ -1,4 +1,4 @@
-description = "Authors unit tests based on implementation code and Gherkin criteria."
+description = "Write unit and integration tests from criteria."
 
 prompt = """
 # Role

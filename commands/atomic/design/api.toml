@@ -1,4 +1,4 @@
-description = "Generates API contracts (OpenAPI/Swagger) based on the Specification and Blueprint."
+description = "Generate API contracts from ARCH.md."
 
 prompt = """
 # Role

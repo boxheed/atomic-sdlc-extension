@@ -1,4 +1,4 @@
-description = "Checks for cross-module dependencies, naming collisions, and interface alignment."
+description = "Audit code for cross-module integration and dependencies."
 
 prompt = """
 # Role

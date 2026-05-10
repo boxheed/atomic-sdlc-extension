@@ -1,5 +1,5 @@
 # In: ~/.gemini/commands/atomic/schema.toml
-description = "Generates database schemas (SQL/NoSQL) based on the Specification and Blueprint."
+description = "Generate DB schema and models from ARCH.md."
 
 prompt = """
 # Role

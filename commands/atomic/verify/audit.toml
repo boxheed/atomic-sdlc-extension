@@ -1,4 +1,4 @@
-description = "Scrutinizes test suites for coverage gaps and weak assertions."
+description = "Audit test coverage for logical gaps."
 
 prompt = """
 # Task: Test Suite Scrutiny

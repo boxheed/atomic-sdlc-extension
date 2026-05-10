@@ -1,4 +1,4 @@
-description = "Reviews authored code for logic errors, security risks, and complexity."
+description = "Audit code for logic, security, and standards."
 
 prompt = """
 # Task: Code Review

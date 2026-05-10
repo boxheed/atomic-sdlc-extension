@@ -1,4 +1,4 @@
-description = "Architects the high-level system design and identifies necessary components."
+description = "Generate ARCH.md from SPEC.md."
 
 prompt = """
 # Role

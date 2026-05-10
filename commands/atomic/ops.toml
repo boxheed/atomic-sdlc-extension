@@ -1,4 +1,4 @@
-description = "Master Agent for the Ops (Maintenance) phase. Orchestrates monitor, analyze, and post-mortem commands."
+description = "Monitor system health, analyze logs, and perform RCA/Post-mortems."
 
 prompt = """
 # Role

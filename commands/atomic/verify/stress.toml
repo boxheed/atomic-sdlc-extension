@@ -1,4 +1,4 @@
-description = "Identifies 'unhappy paths' and generates edge-case test data."
+description = "Stress test for edge cases and failure modes."
 
 prompt = """
 # Task: Edge Case Probing

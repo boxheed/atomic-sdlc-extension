@@ -1,4 +1,4 @@
-description = "Analyzes incident data to suggest process improvements and agent prompt updates."
+description = "Generate post-mortem reports from incident data."
 
 prompt = """
 # Role

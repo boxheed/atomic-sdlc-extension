@@ -1,4 +1,4 @@
-description = "Audits documentation completeness against implementation code."
+description = "Audit documentation against implementation."
 
 prompt = """
 # Role

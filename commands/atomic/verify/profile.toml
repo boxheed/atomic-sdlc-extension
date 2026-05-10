@@ -1,4 +1,4 @@
-description = "Analyzes code for performance bottlenecks, resource leaks, and NFR compliance."
+description = "Profile system for performance and leaks."
 
 prompt = """
 # Role

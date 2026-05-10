@@ -1,4 +1,4 @@
-description = "Extracts core business needs and stakeholder goals from raw input text."
+description = "Extract business needs into ELICITATION.json."
 
 prompt = """
 # Role

@@ -1,4 +1,4 @@
-description = "Generates Gherkin criteria. Infers and reads the Spec file using tools."
+description = "Generate Gherkin criteria from SPEC.md."
 
 prompt = """
 # Task: Acceptance Criteria & Validation

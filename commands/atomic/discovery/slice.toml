@@ -1,4 +1,4 @@
-description = "Slices a Formal Specification into a list of atomic, independent User Stories."
+description = "Slice SPEC.md into stories in STORIES.json."
 
 prompt = """
 # Role

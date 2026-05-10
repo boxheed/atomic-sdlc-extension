@@ -1,4 +1,4 @@
-description = "Master Agent for the Build (Implementation) phase. Orchestrates write, refactor, integrate, audit, docs, and audit-docs commands."
+description = "Implement production-ready code and docs from Design contracts."
 
 prompt = """
 # Role

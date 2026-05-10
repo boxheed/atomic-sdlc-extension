@@ -1,4 +1,4 @@
-description = "Generates CI/CD pipeline configurations (GitHub Actions/GitLab CI) to orchestrate atomic agents."
+description = "Generate CI/CD pipelines and deployment workflows."
 
 prompt = """
 # Role

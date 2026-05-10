@@ -1,4 +1,4 @@
-description = "Inspects UI layouts for usability, accessibility, and flow logic."
+description = "Audit UX/UI for usability and design standards."
 
 prompt = """
 # Task: UX Inspection

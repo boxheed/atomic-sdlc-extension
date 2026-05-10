@@ -1,4 +1,4 @@
-description = "Master Agent for the Discovery phase. Orchestrates extract, limits, audit, spec, slice, and criteria commands."
+description = "Transform raw requirements into a formal SPEC.md and User Stories."
 
 prompt = """
 # Role

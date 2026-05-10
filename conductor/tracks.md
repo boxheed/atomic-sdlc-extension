@@ -10,4 +10,7 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Package Coherence Audit & Cleanup**
   *Link: [./tracks/package_coherence_audit_20260509/](./tracks/package_coherence_audit_20260509/)*
 
+- [x] **Track: Refine Atomic Command Hints & Master Descriptions**
+  *Link: [./tracks/refine_atomic_hints_20260510/](./tracks/refine_atomic_hints_20260510/)*
+
 

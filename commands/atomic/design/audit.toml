@@ -1,4 +1,4 @@
-description = "Evaluates the System Blueprint for scalability, security, and complexity."
+description = "Audit ARCH.md for risk and feasibility."
 
 prompt = """
 # Task: Architecture Evaluation

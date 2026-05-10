@@ -1,4 +1,4 @@
-description = "Converts atomic JSON artifacts into a formatted Markdown report."
+description = "Generate Markdown reports from atomic JSON artifacts."
 
 prompt = """
 # Role

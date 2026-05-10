@@ -1,4 +1,4 @@
-description = "Generates structural UI layouts and user flows based on the Specification."
+description = "Generate UI hierarchies from SPEC.md."
 
 prompt = """
 # Task: UI/UX Layout Design

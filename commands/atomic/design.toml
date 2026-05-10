@@ -1,4 +1,4 @@
-description = "Master Agent for the Design phase. Orchestrates architect, audit, data, api, ui, and audit-ux commands."
+description = "Translate SPEC.md into ARCH.md, API contracts, and Data models."
 
 prompt = """
 # Role

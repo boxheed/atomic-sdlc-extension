@@ -1,4 +1,4 @@
-description = "Master Agent for the Verification phase. Orchestrates write, audit, stress, and profile commands."
+description = "Validate implementation with unit tests, stress tests, and profiling."
 
 prompt = """
 # Role

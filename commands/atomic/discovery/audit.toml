@@ -1,4 +1,4 @@
-description = "Audits requirement drafts for ambiguity, contradictions, and feasibility."
+description = "Audit requirement drafts for ambiguity and gaps."
 
 prompt = """
 # Task: Requirement Audit

@@ -1,4 +1,4 @@
-description = "Performs root-cause analysis by cross-referencing error logs with code and specs."
+description = "Analyze logs and traces for root-cause diagnosis."
 
 prompt = """
 # Role

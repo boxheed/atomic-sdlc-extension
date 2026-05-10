@@ -1,4 +1,4 @@
-description = "Scans code, dependencies, and pipeline configs for security vulnerabilities."
+description = "Audit infrastructure and pipelines for security risks."
 
 prompt = """
 # Role

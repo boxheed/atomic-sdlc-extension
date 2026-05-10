@@ -1,4 +1,4 @@
-description = "Generates technical documentation for a specific code module."
+description = "Generate technical documentation from implementation."
 
 prompt = """
 # Task: Technical Documentation

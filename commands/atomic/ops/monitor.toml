@@ -1,4 +1,4 @@
-description = "Suggests instrumentation points for logs, metrics, and traces based on code and architecture."
+description = "Configure system monitoring, logging, and alerts."
 
 prompt = """
 # Role

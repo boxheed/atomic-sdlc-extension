@@ -1,4 +1,4 @@
-description = "Identifies non-functional requirements and technical constraints from stakeholder input."
+description = "Identify NFRs and technical constraints."
 
 prompt = """
 # Role

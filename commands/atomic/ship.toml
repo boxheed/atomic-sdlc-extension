@@ -1,4 +1,4 @@
-description = "Master Agent for the Ship (Deployment) phase. Orchestrates cicd, secure, and infra commands."
+description = "Deploy code via CI/CD pipelines and Infrastructure-as-Code."
 
 prompt = """
 # Role

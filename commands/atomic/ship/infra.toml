@@ -1,4 +1,4 @@
-description = "Generates Infrastructure-as-Code (Terraform/OpenTofu) based on the Blueprint and Schema."
+description = "Generate Infrastructure-as-Code (IaC) and provisioning scripts."
 
 prompt = """
 # Role
