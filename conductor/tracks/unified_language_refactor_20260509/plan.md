@@ -28,5 +28,5 @@ Rename sub-commands for deployment and maintenance phases.
 Update all project documentation and verify the build.
 
 - [x] Task: Update `README.md` Master Registry with new names. 069d89e
-- [ ] Task: Update `GEMINI.md` and `CONTRIBUTING.md`.
+- [x] Task: Update `GEMINI.md` and `CONTRIBUTING.md`. 6a69ae2
 - [ ] Task: Final `npm run check` and verification.
