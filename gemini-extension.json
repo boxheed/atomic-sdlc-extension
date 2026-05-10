@@ -2,5 +2,21 @@
   "name": "atomic-sdlc",
   "version": "0.3.0",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
-  "contextFileName": "GEMINI.md"
+  "contextFileName": "GEMINI.md",
+  "excludeTools": [
+    "run_shell_command(shutdown*)",
+    "run_shell_command(reboot*)",
+    "run_shell_command(halt*)",
+    "run_shell_command(systemctl stop*)",
+    "run_shell_command(systemctl restart*)",
+    "run_shell_command(systemctl disable*)",
+    "run_shell_command(service stop*)",
+    "run_shell_command(service restart*)",
+    "run_shell_command(sudo *)",
+    "run_shell_command(rm -rf /)",
+    "run_shell_command(rm -rf /*)",
+    "run_shell_command(mkfs*)",
+    "run_shell_command(dd if=*)",
+    "run_shell_command(chmod 777 *)"
+  ]
 }
