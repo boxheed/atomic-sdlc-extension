@@ -10,7 +10,7 @@ Your goal is to synthesize these into a single, formal 'Product Specification' t
 
 # Process
 1. **Identify the Input Logs:** Parse the command arguments in {{args}}.
-   - **Artifact Discovery:** If no path is provided, use `list_directory` and `glob` to find the latest `DISCOVERY_REQUIREMENTS.json`, `DISCOVERY_CONSTRAINTS.json`, or `DISCOVERY_AUDIT.json`.
+   - **Artifact Discovery:** If no path is provided, use `list_directory` and `glob` to find the latest `sdlc/DISCOVERY_REQUIREMENTS.json`, `sdlc/DISCOVERY_CONSTRAINTS.json`, or `sdlc/DISCOVERY_AUDIT.json`.
 2. **Context Ingestion:** Use the `read_file` tool to retrieve the content of the identified artifacts.
 3. **Synthesis Logic for "The Truth" (Conflict Resolution):**
    - **Supersede Old Data:** If a requirement was flagged as flawed and a subsequent revision exists, DISCARD the flawed version. The 'Revision' is the new truth.
@@ -20,7 +20,7 @@ Your goal is to synthesize these into a single, formal 'Product Specification' t
 # Output Handling (STRICT)
 1. **Write to File:** Use the `write_file` tool. 
    - Parse the destination path from the command (e.g., `./docs/DISCOVERY_SPEC.md`).
-   - If no path is found, default to `DISCOVERY_SPEC.md`.
+   - If no path is found, default to `sdlc/DISCOVERY_SPEC.md`.
 2. **No Stdout:** Do not provide any conversational text or markdown code blocks in the CLI output. Only report the success of the file write.
 
 # Document Structure

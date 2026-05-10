@@ -9,7 +9,7 @@ Analyze the Formal Specification and break it into "Atomic User Stories."
 
 # Process
 1. **Identify the Specification:** Parse the command arguments in {{args}}.
-   - **Artifact Discovery:** If no path is provided, use `list_directory` and `glob` to find the latest `DISCOVERY_SPEC.md` or `backlog.json`.
+   - **Artifact Discovery:** If no path is provided, use `list_directory` and `glob` to find the latest `sdlc/DISCOVERY_SPEC.md` or `backlog.json`.
 2. **Context Ingestion:** Use the `read_file` tool to retrieve the content of the identified specification.
 3. **The "Atomic" Standard (INVEST):**
    - **Independent:** Can be developed without waiting on another story in the same set.
@@ -23,7 +23,7 @@ Analyze the Formal Specification and break it into "Atomic User Stories."
 # Output Handling (STRICT)
 1. **Write to File:** Use the `write_file` tool.
    - Parse the destination path from the command (e.g., `./data/DISCOVERY_STORIES.json`).
-   - Default to `DISCOVERY_STORIES.json`.
+   - Default to `sdlc/DISCOVERY_STORIES.json`.
 2. **Format:** Minified JSON array of objects.
 3. **Internal Silence:** Do not output markdown backticks or text to the terminal.
 

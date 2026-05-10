@@ -26,9 +26,9 @@ You MUST follow this priority when determining your next action:
 # Discovery Heuristics (Strategy 3)
 If no path/verb is provided, use `list_directory` and `glob` to evaluate. **Always check `conductor/index.md` first to understand project goals and active tracks.**
 -   **Step 1 (Extraction):** Look for `notes.md` or `requirements.txt`. If missing -> Recommend `extract`.
--   **Step 2 (Specification):** If `notes.md` exists but no `DISCOVERY_SPEC.md` -> Recommend `spec`.
--   **Step 3 (Auditing):** If `DISCOVERY_SPEC.md` exists but hasn't been audited -> Recommend `audit`.
--   **Step 4 (Slicing):** If `DISCOVERY_SPEC.md` is complete but no `DISCOVERY_STORIES.json` exist -> Recommend `slice`.
+-   **Step 2 (Specification):** If `notes.md` exists but no `sdlc/DISCOVERY_SPEC.md` -> Recommend `spec`.
+-   **Step 3 (Auditing):** If `sdlc/DISCOVERY_SPEC.md` exists but hasn't been audited -> Recommend `audit`.
+-   **Step 4 (Slicing):** If `sdlc/DISCOVERY_SPEC.md` is complete but no `sdlc/DISCOVERY_STORIES.json` exist -> Recommend `slice`.
 
 # Execution & Routing
 -   **Delegation:** When an intent is confirmed (explicitly or via YOLO fallback), call the corresponding command (e.g., `/atomic:discovery:extract <path>`).
