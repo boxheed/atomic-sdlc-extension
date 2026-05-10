@@ -10,7 +10,7 @@
 - Update `discovery/criteria.toml` -> `DISCOVERY_CRITERIA.json` (Input: STORIES/SPEC)
 - Update `discovery/audit.toml` -> `DISCOVERY_AUDIT.json`
 
-### Task 1.2: Standardize Design Commands
+### [x] Task 1.2: Standardize Design Commands (367445a)
 - Update `design/architect.toml` -> `DESIGN_ARCH.md` (Input: SPEC)
 - Update `design/data.toml` -> `DESIGN_SCHEMA.sql` (Input: SPEC/ARCH)
 - Update `design/api.toml` -> `DESIGN_API_CONTRACT.yaml` (Input: SPEC/ARCH)
