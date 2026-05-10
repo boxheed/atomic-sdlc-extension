@@ -6,7 +6,7 @@ Rename sub-commands for the first two phases and update orchestrators.
 - [x] Task: Rename discovery sub-commands: `elicit`->`extract`, `constrain`->`limits`, `formalize`->`spec`, `atomize`->`slice`. 38eab8b
 - [x] Task: Update `commands/atomic/discovery.toml` logic and descriptions. 1a4996e
 - [x] Task: Rename design sub-commands: `blueprint`->`architect`, `evaluate`->`audit`, `inspect`->`audit-ux`, `interface`->`api`, `schema`->`data`, `layout`->`ui`. 86c1723
-- [ ] Task: Update `commands/atomic/design.toml` logic and descriptions.
+- [x] Task: Update `commands/atomic/design.toml` logic and descriptions. 0cfb3f9
 
 ## Phase 2: Build & Verify Rename
 Rename sub-commands for implementation and testing phases.
