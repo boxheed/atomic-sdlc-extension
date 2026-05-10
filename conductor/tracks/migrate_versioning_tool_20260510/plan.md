@@ -5,7 +5,7 @@ Swap the packages and update the npm scripts.
 
 - [x] Task: Uninstall `standard-version`. 74a5fd4
 - [x] Task: Install `commit-and-tag-version` as a dev dependency. 9aa1f79
-- [ ] Task: Update the `release` script in `package.json` to use `commit-and-tag-version`.
+- [x] Task: Update the `release` script in `package.json` to use `commit-and-tag-version`. 88060d3
 
 ## Phase 2: Documentation Synchronization
 Align the project documentation with the new tool.
