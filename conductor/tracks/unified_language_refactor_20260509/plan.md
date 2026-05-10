@@ -19,7 +19,7 @@ Rename sub-commands for implementation and testing phases.
 ## Phase 3: Ship & Ops Rename
 Rename sub-commands for deployment and maintenance phases.
 
-- [ ] Task: Rename ship sub-commands: `pipeline`->`cicd`, `harden`->`secure`, `provision`->`infra`.
+- [x] Task: Rename ship sub-commands: `pipeline`->`cicd`, `harden`->`secure`, `provision`->`infra`. 671cd68
 - [ ] Task: Update `commands/atomic/ship.toml` logic and descriptions.
 - [ ] Task: Rename ops sub-commands: `telemetry`->`monitor`, `diagnose`->`analyze`, `retrospect`->`post-mortem`.
 - [ ] Task: Update `commands/atomic/ops.toml` logic and descriptions.
