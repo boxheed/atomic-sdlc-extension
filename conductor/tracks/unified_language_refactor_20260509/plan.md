@@ -8,7 +8,7 @@ Rename sub-commands for the first two phases and update orchestrators.
 - [x] Task: Rename design sub-commands: `blueprint`->`architect`, `evaluate`->`audit`, `inspect`->`audit-ux`, `interface`->`api`, `schema`->`data`, `layout`->`ui`. 86c1723
 - [x] Task: Update `commands/atomic/design.toml` logic and descriptions. 0cfb3f9
 
-## Phase 2: Build & Verify Rename
+## Phase 2: Build & Verify Rename [checkpoint: ddc3af7]
 Rename sub-commands for implementation and testing phases.
 
 - [x] Task: Rename build sub-commands: `author`->`write`, `review`->`audit`, `validate`->`audit-docs`, `document`->`docs`. 8c57dca
