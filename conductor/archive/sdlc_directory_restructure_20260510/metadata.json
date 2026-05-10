@@ -1,0 +1,7 @@
+{
+  "id": "sdlc_directory_restructure_20260510",
+  "title": "SDLC Directory Restructuring",
+  "description": "Move all atomic-sdlc artifacts from the workspace root to a flat `sdlc/` directory to eliminate clutter and improve project organization.",
+  "status": "planned",
+  "created_at": "2026-05-10"
+}
