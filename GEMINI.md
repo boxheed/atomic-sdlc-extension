@@ -32,12 +32,12 @@ All Master Agents follow a strict execution priority to ensure precision and pre
 
 | Phase (Master Command) | Verbs (Atomic Sub-Skills) | Description |
 | :--- | :--- | :--- |
-| **`/atomic:discovery`** | `:elicit`, `:constrain`, `:audit`, `:formalize`, `:atomize`, `:criteria` | Requirements discovery and formalization. |
-| **`/atomic:design`** | `:blueprint`, `:evaluate`, `:schema`, `:interface`, `:layout`, `:inspect` | System architecture and design contracts. |
-| **`/atomic:build`** | `:author`, `:refactor`, `:integrate`, `:review`, `:document`, `:validate` | Implementation, code quality, and documentation. |
-| **`/atomic:verify`** | `:test`, `:scrutinize`, `:probe`, `:profile` | Automated testing and performance profiling. |
-| **`/atomic:ship`** | `:pipeline`, `:harden`, `:provision` | Deployment pipelines and security hardening. |
-| **`/atomic:ops`** | `:telemetry`, `:diagnose`, `:retrospect` | Monitoring, root-cause analysis, and incident learning. |
+| **`/atomic:discovery`** | `:extract`, `:limits`, `:audit`, `:spec`, `:slice`, `:criteria` | Requirements discovery and formalization. |
+| **`/atomic:design`** | `:architect`, `:audit`, `:data`, `:api`, `:ui`, `:audit-ux` | System architecture and design contracts. |
+| **`/atomic:build`** | `:write`, `:refactor`, `:integrate`, `:audit`, `:docs`, `:audit-docs` | Implementation, code quality, and documentation. |
+| **`/atomic:verify`** | `:write`, `:audit`, `:stress`, `:profile` | Automated testing and performance profiling. |
+| **`/atomic:ship`** | `:cicd`, `:secure`, `:infra` | Deployment pipelines and security hardening. |
+| **`/atomic:ops`** | `:monitor`, `:analyze`, `:post-mortem` | Monitoring, root-cause analysis, and incident learning. |
 
 ---
 
