@@ -8,9 +8,6 @@
     "release": "standard-version",
     "package": "zip -r extension.zip gemini-extension.json GEMINI.md commands/ README.md"
   },
-  "devDependencies": {
-    "standard-version": "^9.5.0"
-  },
   "keywords": [
     "gemini",
     "extension",
