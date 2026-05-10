@@ -75,44 +75,44 @@ An `.ai-instructions.md` file is located in the root. When using a coding assist
 | :--- | :--- | :--- | :--- | :--- |
 | **Discovery** | | | | |
 | **`/atomic:discovery`** | **Master** | **Orchestrates the Discovery Phase.** | **Autonomous Requirements Discovery.** | ✅ |
-| `/atomic:discovery:elicit` | Discovery | Extracts core needs from raw input. | Filters noise for true value. | ✅ |
-| `/atomic:discovery:constrain`| Discovery | Identifies technical NFRs. | Sets the system boundaries. | ✅ |
+| `/atomic:discovery:extract` | Discovery | Extracts core needs from raw input. | Filters noise for true value. | ✅ |
+| `/atomic:discovery:limits` | Discovery | Identifies technical NFRs. | Sets the system boundaries. | ✅ |
 | `/atomic:discovery:audit` | Discovery | Examines drafts for ambiguity. | The Gatekeeper for quality. | ✅ |
-| `/atomic:discovery:formalize`| Utility | Reconciles logs into a Spec. | Creates the Source of Truth. | ✅ |
-| `/atomic:discovery:atomize` | Discovery | Slices Spec into User Stories. | Converts "What" into tasks. | ✅ |
+| `/atomic:discovery:spec` | Utility | Reconciles logs into a Spec. | Creates the Source of Truth. | ✅ |
+| `/atomic:discovery:slice` | Discovery | Slices Spec into User Stories. | Converts "What" into tasks. | ✅ |
 | `/atomic:discovery:criteria` | Discovery | Generates Gherkin scenarios. | Defines "Done" objectively. | ✅ |
 | **Design** | | | | |
 | **`/atomic:design`** | **Master** | **Orchestrates the Design Phase.** | **Autonomous Architectural Design.** | ✅ |
-| `/atomic:design:blueprint` | Design | Architects high-level design. | The Master Plan for Design. | ✅ |
-| `/atomic:design:evaluate` | Design | Critiques blueprint for risk. | Prevents over-engineering. | ✅ |
-| `/atomic:design:schema` | Design | Generates DB structures. | Builds the data layer. | ✅ |
-| `/atomic:design:interface` | Design | Generates API contracts. | Builds the boundary layer. | ✅ |
-| `/atomic:design:layout` | Design | Generates UI wireframes. | Defines the user journey. | ✅ |
-| `/atomic:design:inspect` | Design | Performs UX usability audits. | Validates human interface. | ✅ |
+| `/atomic:design:architect` | Design | Architects high-level design. | The Master Plan for Design. | ✅ |
+| `/atomic:design:audit` | Design | Critiques architectural design. | Prevents over-engineering. | ✅ |
+| `/atomic:design:data` | Design | Generates DB structures. | Builds the data layer. | ✅ |
+| `/atomic:design:api` | Design | Generates API contracts. | Builds the boundary layer. | ✅ |
+| `/atomic:design:ui` | Design | Generates UI wireframes. | Defines the user journey. | ✅ |
+| `/atomic:design:audit-ux` | Design | Performs UX usability audits. | Validates human interface. | ✅ |
 | **Build** | | | | |
 | **`/atomic:build`** | **Master** | **Orchestrates the Build Phase.** | **Autonomous System Implementation.** | ✅ |
-| `/atomic:build:author` | Build | Writes modular code. | Turns design into logic. | ✅ |
+| `/atomic:build:write` | Build | Writes modular code. | Turns design into logic. | ✅ |
 | `/atomic:build:refactor` | Build | Cleans up code smells/debt. | Ensures "Clean" code. | ✅ |
 | `/atomic:build:integrate` | Build | Checks for module regressions. | Fits unit into the system. | ✅ |
-| `/atomic:build:review` | Build | Performs logic/security review. | Automated Peer Reviewer. | ✅ |
-| `/atomic:build:document` | Build | Writes tech documentation. | Ensures maintainability. | ✅ |
-| `/atomic:build:validate` | Build | Audits docs against code. | Prevents stale documentation. | ✅ |
+| `/atomic:build:audit` | Build | Performs logic/security review. | Automated Peer Reviewer. | ✅ |
+| `/atomic:build:docs` | Build | Writes tech documentation. | Ensures maintainability. | ✅ |
+| `/atomic:build:audit-docs` | Build | Audits docs against code. | Prevents stale documentation. | ✅ |
 | **Verify** | | | | |
 | **`/atomic:verify`** | **Master** | **Orchestrates the Verification Phase.** | **Autonomous Testing & Profiling.** | ✅ |
-| `/atomic:verify:test` | Verify | Authors unit tests. | Proves code correctness. | ✅ |
-| `/atomic:verify:scrutinize`| Verify | Critiques tests for gaps. | Ensures effective testing. | ✅ |
-| `/atomic:verify:probe` | Verify | Hunts for "unhappy paths." | Stress-tests resilience. | ✅ |
+| `/atomic:verify:write` | Verify | Authors unit tests. | Proves code correctness. | ✅ |
+| `/atomic:verify:audit` | Verify | Critiques tests for gaps. | Ensures effective testing. | ✅ |
+| `/atomic:verify:stress` | Verify | Hunts for "unhappy paths." | Stress-tests resilience. | ✅ |
 | `/atomic:verify:profile` | Verify | Identifies NFR bottlenecks. | Ensures performance goals. | ✅ |
 | **Ship** | | | | |
 | **`/atomic:ship`** | **Master** | **Orchestrates the Ship Phase.** | **Autonomous CI/CD & Provisioning.** | ✅ |
-| `/atomic:ship:pipeline` | Ship | Generates CI/CD scripts. | Automates the ship path. | ✅ |
-| `/atomic:ship:harden` | Ship | Scans for security holes. | Prevents insecure deploys. | ✅ |
-| `/atomic:ship:provision` | Ship | Generates IaC (Terraform). | Matches prod to dev. | ✅ |
+| `/atomic:ship:cicd` | Ship | Generates CI/CD scripts. | Automates the ship path. | ✅ |
+| `/atomic:ship:secure` | Ship | Scans for security holes. | Prevents insecure deploys. | ✅ |
+| `/atomic:ship:infra` | Ship | Generates IaC (Terraform). | Matches prod to dev. | ✅ |
 | **Ops** | | | | |
 | **`/atomic:ops`** | **Master** | **Orchestrates the Ops Phase.** | **Autonomous Monitoring & Learning.** | ✅ |
-| `/atomic:ops:telemetry` | Ops | Suggests monitoring points. | Visibility into live health. | ✅ |
-| `/atomic:ops:diagnose` | Ops | Root-cause analysis of logs. | Accelerates bug fixing. | ✅ |
-| `/atomic:ops:retrospect`| Ops | Critiques incident response. | Facilitates Learning Loop. | ✅ |
+| `/atomic:ops:monitor` | Ops | Suggests monitoring points. | Visibility into live health. | ✅ |
+| `/atomic:ops:analyze` | Ops | Root-cause analysis of logs. | Accelerates bug fixing. | ✅ |
+| `/atomic:ops:post-mortem` | Ops | Critiques incident response. | Facilitates Learning Loop. | ✅ |
 | **Reporting** | | | | |
 | `/atomic:utility:format-md` | Utility | Transforms JSON into Reports. | Makes machine data readable. | ✅ |
 
@@ -120,8 +120,8 @@ An `.ai-instructions.md` file is located in the root. When using a coding assist
 
 | Command Name | Category | Description | Purpose | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| `/atomic:analyse` | Design | Reviews and expands existing requirements. | Replaced by `/atomic:elicit`. | ❌ |
-| `/atomic:architect` | Design | Proposes technical system changes. | Replaced by `/atomic:blueprint`. | ❌ |
+| `/atomic:analyse` | Design | Reviews and expands existing requirements. | Replaced by `/atomic:discovery:extract`. | ❌ |
+| `/atomic:architect` | Design | Proposes technical system changes. | Replaced by `/atomic:design:architect`. | ❌ |
 
 ---
 
