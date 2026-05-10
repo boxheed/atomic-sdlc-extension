@@ -16,7 +16,7 @@ Rename sub-commands for implementation and testing phases.
 - [x] Task: Rename verify sub-commands: `test`->`write`, `scrutinize`->`audit`, `probe`->`stress`. 78d2b22
 - [x] Task: Update `commands/atomic/verify.toml` logic and descriptions. c90ada7
 
-## Phase 3: Ship & Ops Rename
+## Phase 3: Ship & Ops Rename [checkpoint: b0c2eee]
 Rename sub-commands for deployment and maintenance phases.
 
 - [x] Task: Rename ship sub-commands: `pipeline`->`cicd`, `harden`->`secure`, `provision`->`infra`. 671cd68
