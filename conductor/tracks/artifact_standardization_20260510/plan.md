@@ -17,7 +17,7 @@
 - Update `design/ui.toml` -> `DESIGN_UI_SPEC.md` (Input: SPEC)
 - Update `design/audit.toml` -> `DESIGN_AUDIT.json`
 
-### Task 1.3: Standardize Build & Verify Commands
+### [x] Task 1.3: Standardize Build & Verify Commands (24c911d)
 - Update `build/write.toml`, `build/audit.toml`, `build/integrate.toml`, `build/docs.toml`.
 - Update `verify/write.toml`, `verify/audit.toml`, `verify/stress.toml`, `verify/profile.toml`.
 
