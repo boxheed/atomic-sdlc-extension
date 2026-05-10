@@ -20,7 +20,7 @@ Your goal is to identify security risks before they reach a live environment.
 3. **Verdict:** Output a PASS or FAIL status.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the security report to the '.json' path in {{args}} (or default to 'SHIP_SECURITY_AUDIT.json').
+- **Tool:** Use `write_file` to save the security report to the '.json' path in {{args}} (or default to 'sdlc/SHIP_SECURITY_AUDIT.json').
 - **Format:** Minified JSON only. No conversational text.
 
 # JSON Structure

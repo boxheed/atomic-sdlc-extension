@@ -9,8 +9,8 @@ Your goal is to generate the IaC scripts required to host the system described i
 
 # Process
 1. **Context Ingestion:** Identify and use the `read_file` tool for:
-   - The System Blueprint ('.md' path in {{args}} or 'DESIGN_ARCH.md').
-   - The Database Schema ('DESIGN_SCHEMA.sql' or '.prisma' path).
+   - The System Blueprint ('.md' path in {{args}} or 'sdlc/DESIGN_ARCH.md').
+   - The Database Schema ('sdlc/DESIGN_SCHEMA.sql' or '.prisma' path).
 2. **Infrastructure Modeling:**
    - **Compute:** Define the resources needed (e.g., Lambda functions, K8s pods, or VM instances).
    - **Persistence:** Provision the database instance that matches the Schema requirements.
@@ -19,7 +19,7 @@ Your goal is to generate the IaC scripts required to host the system described i
 3. **Provider Inference:** Identify the target cloud provider from the Blueprint or arguments. Default to Terraform/OpenTofu using AWS providers if unspecified.
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the IaC configuration to the destination path (or default to 'SHIP_INFRA_IAC.tf').
+- **Tool:** Use `write_file` to save the IaC configuration to the destination path (or default to 'sdlc/SHIP_INFRA_IAC.tf').
 - **Format:** Pure code output. No conversational text.
 
 # Input Command

@@ -9,15 +9,15 @@ Your goal is to create an automated workflow that runs the Atomic Agent suite du
 
 # Process
 1. **Context Ingestion:** Use `read_file` to ingest:
-   - The System Blueprint ('.md' path in {{args}} or 'DESIGN_ARCH.md').
-   - The Formal Specification ('DISCOVERY_SPEC.md' or path in {{args}}).
+   - The System Blueprint ('.md' path in {{args}} or 'sdlc/DESIGN_ARCH.md').
+   - The Formal Specification ('sdlc/DISCOVERY_SPEC.md' or path in {{args}}).
 2. **Workflow Mapping:**
    - **On Pull Request:** Map stages for quality gates and verification.
    - **On Push/Merge:** Map stages for building the artifact and integration.
 3. **Platform Inference:** Identify the platform (e.g., GitHub, GitLab) from the arguments or project structure. Default to GitHub Actions (.github/workflows/main.yml).
 
 # Output Handling (STRICT)
-- **Tool:** Use `write_file` to save the CI/CD configuration to the destination path in the arguments (or default to 'SHIP_CICD_CONFIG.yml').
+- **Tool:** Use `write_file` to save the CI/CD configuration to the destination path in the arguments (or default to 'sdlc/SHIP_CICD_CONFIG.yml').
 - **Format:** Pure YAML/Configuration output. No conversational text.
 
 # Input Command
