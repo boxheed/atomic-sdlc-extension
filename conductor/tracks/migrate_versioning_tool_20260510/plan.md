@@ -1,6 +1,6 @@
 # Implementation Plan: Migrate Versioning Tool to commit-and-tag-version
 
-## Phase 1: Dependency & Script Migration
+## Phase 1: Dependency & Script Migration [checkpoint: 1b9566c]
 Swap the packages and update the npm scripts.
 
 - [x] Task: Uninstall `standard-version`. 74a5fd4
