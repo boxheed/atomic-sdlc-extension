@@ -10,8 +10,8 @@ Swap the packages and update the npm scripts.
 ## Phase 2: Documentation Synchronization
 Align the project documentation with the new tool.
 
-- [ ] Task: Update `tech-stack.md` to list `commit-and-tag-version` instead of `standard-version`.
-- [ ] Task: Audit other documentation for stale references.
+- [x] Task: Update `tech-stack.md` to list `commit-and-tag-version` instead of `standard-version`. f8a258a
+- [x] Task: Audit other documentation for stale references. 7718bdb
 
 ## Phase 3: Verification
 Verify the new tool's functionality.
