@@ -27,6 +27,6 @@ Rename sub-commands for deployment and maintenance phases.
 ## Phase 4: Documentation & Final Polish
 Update all project documentation and verify the build.
 
-- [ ] Task: Update `README.md` Master Registry with new names.
+- [x] Task: Update `README.md` Master Registry with new names. 069d89e
 - [ ] Task: Update `GEMINI.md` and `CONTRIBUTING.md`.
 - [ ] Task: Final `npm run check` and verification.
