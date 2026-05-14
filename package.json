@@ -2,6 +2,11 @@
   "name": "atomic-sdlc",
   "version": "0.3.2",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boxheed/atomic-sdlc-extension.git"
+  },
+  "homepage": "https://github.com/boxheed/atomic-sdlc-extension#readme",
   "scripts": {
     "test": "echo \"Warning: no test available\" && exit 0",
     "lint:toml": "node scripts/lint-toml.js",

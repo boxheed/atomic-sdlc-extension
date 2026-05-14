@@ -2,6 +2,8 @@
   "name": "atomic-sdlc",
   "version": "0.3.2",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
+  "repository": "https://github.com/boxheed/atomic-sdlc-extension",
+  "homepage": "https://github.com/boxheed/atomic-sdlc-extension",
   "contextFileName": "GEMINI.md",
   "excludeTools": [
     "run_shell_command(shutdown*)",
