@@ -1,6 +1,6 @@
 {
   "name": "atomic-sdlc",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
   "repository": {
     "type": "git",
