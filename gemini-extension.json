@@ -1,6 +1,6 @@
 {
   "name": "atomic-sdlc",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "A modular suite of high-precision, atomic AI agent skills for the SDLC",
   "repository": "https://github.com/boxheed/atomic-sdlc-extension",
   "homepage": "https://github.com/boxheed/atomic-sdlc-extension",
